@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Book-table.module.css"; // Імпортуємо CSS модулі
 
 const BookTable = () => {
