@@ -1,0 +1,146 @@
+.headerFirstDiv {
+  min-width: 320px;
+  min-height: 800px;
+  background-image: url("./src/images/hero\ image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+}
+
+.headerLogo {
+  max-width: 50px;
+  min-height: 35px;
+}
+
+.headerNav {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+/* Header Bold Tex */
+
+.headerFirstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.divViewHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  min-height: 200px;
+  padding-top: 250px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.viewHeaderText {
+  font-weight: 500;
+  font-size: 40px;
+  color: #d67e35;
+  margin: 0;
+}
+
+/* MODAL */
+
+/* styles.module.css */
+
+/* Стилі для модального вікна */
+.modal {
+  position: relative;
+}
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burgerMenu {
+}
+
+.headerLogo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.burgerIcon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.viewMenuButton {
+  margin-top: 20px;
+}
+
+.navList {
+  display: none;
+}
+
+.navItem {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: #007bff;
+}
+
+.phoneNumber {
+  display: none;
+}
+
+.phoneNumber:hover {
+  color: #007bff;
+}
+
+.reservationButton {
+  display: none;
+}
+
+.reservationButton:hover {
+  background-color: #0056b3;
+}
+
+.viewMenuButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #de6705c7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.viewMenuButton:hover {
+  background: #ff7300b1;
+}
+
+.viewMenuButton:focus {
+  background: #ff7300d4;
+}
+
+.viewClass {
+  min-height: 20px;
+}

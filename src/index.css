@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -13,6 +13,37 @@ p {
   margin: 0;
 }
 
+/* Example of font usage */
+h1 {
+  font-family: "Tinos", serif; /* Tinos Regular */
+  font-weight: 400; /* Regular weight */
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600; /* Open Sans SemiBold */
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; /* Open Sans Bold */
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+em {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+.cookie-text {
+  font-family: "Cookie", cursive;
+}
+
+/* Reset margin and padding for lists */
 ul,
 ol {
   margin: 0;

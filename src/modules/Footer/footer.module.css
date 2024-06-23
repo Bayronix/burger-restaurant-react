@@ -1,0 +1,107 @@
+.headerFirstDiv {
+  min-width: 320px;
+  min-height: 320px;
+  background-image: url("./src/images/hero\ image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.headerLogo {
+  max-width: 50px;
+  height: 35px;
+}
+
+.headerNav {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+/* Header Bold Tex */
+
+.headerFirstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.divViewHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  min-height: 200px;
+  padding-top: 250px;
+}
+
+.viewHeaderText {
+  font-weight: 500;
+  font-size: 40px;
+  color: #d67e35;
+  margin: 0;
+}
+
+.viewMenuButton {
+  margin-top: 20px;
+}
+
+.navList {
+}
+
+.navItem {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: #007bff;
+}
+
+.phoneNumber {
+}
+
+.phoneNumber:hover {
+  color: #007bff;
+}
+
+.reservationButton {
+  display: none;
+}
+
+.reservationButton:hover {
+  background-color: #0056b3;
+}
+
+.viewMenuButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff7400;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.viewMenuButton:hover {
+  background: #ff7300b1;
+}
+
+.viewMenuButton:focus {
+  background: #ff7300d4;
+}

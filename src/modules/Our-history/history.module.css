@@ -1,0 +1,63 @@
+.historySection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.textContainer {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #656363;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.statsList {
+  display: block;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.statsItem {
+  text-align: center;
+}
+
+.statsNumber {
+  font-size: 24px;
+  color: #d67e35;
+  margin: 0;
+}
+
+.statsLabel {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.historyImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

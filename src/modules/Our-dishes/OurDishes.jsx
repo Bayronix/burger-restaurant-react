@@ -1,22 +1,64 @@
+import React from "react";
+import styles from "./ourdishes.module.css"; // Імпортуємо CSS модулі
+
 const OurDishes = () => {
   return (
-    <section>
-      <img></img>
-      <ul className="about-u-list">
-        <li className="about-us-item">
-          <img></img>
-          <h3>Mini hamburger</h3>
-          <p>$26</p>
+    <section className={styles.ourDishesSection}>
+      <h3 className={styles.ourMenu}>Our Menu</h3>
+      <ul className={styles.dishesList}>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
         </li>
-        <li className="about-u-item">
-          <img></img>
-          <h3>Mini hamburger</h3>
-          <p>$26</p>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
         </li>
-        <li className="about-u-item">
-          <img></img>
-          <h3>Mini hamburger</h3>
-          <p>$26</p>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
+        </li>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
+        </li>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
+        </li>
+        <li className={styles.dishItem}>
+          <img
+            src="./src/images/burger1.jpg"
+            alt="Mini Hamburger"
+            className={styles.dishItemImage}
+          />
+          <h3 className={styles.dishTitle}>Mini Hamburger</h3>
+          <p className={styles.dishPrice}>$26</p>
         </li>
       </ul>
     </section>

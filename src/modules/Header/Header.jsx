@@ -1,27 +1,43 @@
+import React from "react";
+import styles from "./header.module.css";
+import { MdFoodBank } from "react-icons/md";
+
 const Header = () => {
   return (
     <header>
-      <div>
-        <div>
-          <img src="path_to_your_image" alt="Logo" className="header-logo" />
-          <nav className="header-nav">
-            <ul className="nav-list">
-              <li className="nav-item">Home Page</li>
-              <li className="nav-item">Menu</li>
-              <li className="nav-item">About Us</li>
-              <li className="nav-item">Reservation</li>
+      <div className={styles.headerFirstDiv}>
+        <div className={styles.headerDiv}>
+          <img
+            src="./src/svg/LOGO.svg"
+            alt="Logo"
+            className={styles.headerLogo}
+          />
+          <nav className={styles.headerNav}>
+            <ul className={styles.navList}>
+              <li className={styles.navItem}>Home Page</li>
+              <li className={styles.navItem}>Menu</li>
+              <li className={styles.navItem}>About Us</li>
+              <li className={styles.navItem}>Reservation</li>
             </ul>
           </nav>
-          <a href="tel:+1234567890" className="phone-number">
+          <img
+            src="./src/svg/Group.svg"
+            alt="Logo"
+            className={styles.headerLogo}
+          />
+          <a href="tel:+1234567890" className={styles.phoneNumber}>
             +1 (234) 567-890
           </a>
-          <button type="button" className="reservation-button">
-            TABLE RESERVATION
+          <button type="button" className={styles.reservationButton}>
+            Table Reservation
           </button>
         </div>
-        <div>
-          <h1>Welcome to Our Restaurant</h1>
-          <button type="button" className="view-menu-button">
+        <div className={styles.divViewHeader}>
+          <h1 className={styles.viewHeaderText}>
+            Welcome to <b>Flame & Bun!</b>
+            <MdFoodBank className={styles.viewClass} />
+          </h1>
+          <button type="button" className={styles.viewMenuButton}>
             View Menu
           </button>
         </div>

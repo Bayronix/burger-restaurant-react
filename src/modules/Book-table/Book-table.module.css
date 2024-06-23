@@ -1,0 +1,50 @@
+.bookTableSection {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bookTableContainer {
+  padding: 20px;
+
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.bookTableHeading {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #d67e34;
+}
+
+.bookTableDescription {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.bookTableButton {
+  background-color: #ff7400;
+  color: #fff;
+  border: none;
+  min-width: 139px;
+  min-height: 43px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.bookTableButton:hover {
+  background-color: #e66700;
+}

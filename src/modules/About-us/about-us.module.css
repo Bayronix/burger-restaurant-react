@@ -1,0 +1,43 @@
+.about-u-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.about-u-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-u-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.about-u-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 26px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.about-u-description {
+  line-height: 1.5;
+
+  font-weight: 400;
+  font-size: 18px;
+  color: #656363;
+}
+
+.about-u-icon {
+  width: 30px;
+  height: 30px;
+}
