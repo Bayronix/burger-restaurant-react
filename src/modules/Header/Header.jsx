@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./header.module.css";
 import { MdFoodBank } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { PiHamburgerFill } from "react-icons/pi";
 
 const Header = () => {
   return (
     <header>
       <div className={styles.headerFirstDiv}>
         <div className={styles.headerDiv}>
-          <img
-            src="./src/svg/LOGO.svg"
-            alt="Logo"
+          <PiHamburgerFill
             className={styles.headerLogo}
+            style={{ color: "#d67e35" }}
           />
           <nav className={styles.headerNav}>
             <ul className={styles.navList}>
@@ -20,10 +21,9 @@ const Header = () => {
               <li className={styles.navItem}>Reservation</li>
             </ul>
           </nav>
-          <img
-            src="./src/svg/Group.svg"
-            alt="Logo"
+          <RxHamburgerMenu
             className={styles.headerLogo}
+            style={{ color: "#d67e35" }}
           />
           <a href="tel:+1234567890" className={styles.phoneNumber}>
             +1 (234) 567-890

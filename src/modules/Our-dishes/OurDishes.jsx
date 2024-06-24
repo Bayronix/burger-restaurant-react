@@ -8,7 +8,7 @@ const OurDishes = () => {
       <ul className={styles.dishesList}>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
@@ -17,7 +17,7 @@ const OurDishes = () => {
         </li>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
@@ -26,7 +26,7 @@ const OurDishes = () => {
         </li>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
@@ -35,7 +35,7 @@ const OurDishes = () => {
         </li>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
@@ -44,7 +44,7 @@ const OurDishes = () => {
         </li>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
@@ -53,7 +53,7 @@ const OurDishes = () => {
         </li>
         <li className={styles.dishItem}>
           <img
-            src="./src/images/burger1.jpg"
+            src="/images/burger1.jpg"
             alt="Mini Hamburger"
             className={styles.dishItemImage}
           />
