@@ -29,7 +29,7 @@ const History = () => {
           </li>
         </ul>
         <img
-          src="./src/images/history.jpg"
+          src="./public/images/restaurant.jpg"
           alt="Our History"
           className={styles.historyImage}
         />
