@@ -6,8 +6,6 @@ const Footer = () => {
     <header>
       <div className={styles.headerFirstDiv}>
         <div className={styles.headerDiv}>
-          <CiMenuBurger className={styles.headerLogo} />
-
           <a href="tel:+1234567890" className={styles.phoneNumber}>
             +1 (234) 567-890
           </a>

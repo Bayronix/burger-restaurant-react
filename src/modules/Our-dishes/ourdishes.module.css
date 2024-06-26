@@ -1,21 +1,18 @@
 .ourMenu {
 }
 
-/* Основний контейнер секції */
 .ourDishesSection {
   padding: 40px 20px;
   background-color: #fff;
   text-align: center;
 }
 
-/* Список страв */
 .dishesList {
   display: block;
   padding: 0;
   list-style: none;
 }
 
-/* Елемент страви */
 .dishItem {
   margin-bottom: 20px;
   text-align: center;
@@ -25,21 +22,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Зображення страви */
 .dishItemImage {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Заголовок страви */
 .dishTitle {
   font-size: 18px;
   color: #333;
   margin-top: 10px;
 }
 
-/* Ціна страви */
 .dishPrice {
   font-size: 16px;
   color: #666;
