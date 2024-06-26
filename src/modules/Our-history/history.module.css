@@ -22,7 +22,7 @@
   font-size: 16px;
   color: #656363;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .statsList {
@@ -38,15 +38,18 @@
 }
 
 .statsNumber {
-  font-size: 24px;
-  color: #d67e35;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #bc9060;
   margin: 0;
 }
 
 .statsLabel {
-  font-size: 14px;
-  color: #333;
-  margin: 5px 0 0;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
 }
 
 .imageContainer {
@@ -60,4 +63,6 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-left: 13px;
+  padding-top: 50px;
 }

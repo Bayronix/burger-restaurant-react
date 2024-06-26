@@ -13,7 +13,7 @@ const BookTable = () => {
             Celebrate at one of the finest restaurants.
           </h3>
           <p className={styles.bookTableDescription}>
-            Only this month, business lunch starting from $25
+            Only this month, business lunch starting from $2
           </p>
         </div>
         <button className={styles.bookTableButton} onClick={handleReservation}>
