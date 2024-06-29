@@ -1,4 +1,4 @@
-import styles from "./history.module.css";
+import styles from "./Our-history.module.css";
 
 const OurHistory = () => {
   return (
@@ -28,7 +28,7 @@ const OurHistory = () => {
           </li>
         </ul>
         <img
-          src="./public/images/restaurantBg.jpg"
+          src="./images/restaurantOurHistory.jpg"
           alt="Our History"
           className={styles.historyImage}
         />
