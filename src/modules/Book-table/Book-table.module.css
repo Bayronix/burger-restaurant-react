@@ -38,10 +38,11 @@
 }
 
 .bookTableDescription {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   text-align: center;
   color: #fff;
+  padding-top: 25px;
 }
 
 .bookTableButton {

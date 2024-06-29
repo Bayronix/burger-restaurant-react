@@ -1,0 +1,44 @@
+[
+  {
+    "id": 5,
+    "author": "Alex Johnson",
+    "date": "2024-06-18",
+    "rating": 4,
+    "text": "Nice variety of burgers and toppings. Enjoyed the jalapeno burger!"
+  },
+  {
+    "id": 6,
+    "author": "Sarah Lee",
+    "date": "2024-06-15",
+    "rating": 5,
+    "text": "Friendly service and delicious burgers. The milkshakes are fantastic too!"
+  },
+  {
+    "id": 7,
+    "author": "David Miller",
+    "date": "2024-06-12",
+    "rating": 3,
+    "text": "Burgers were good, but the prices were a bit high compared to other places."
+  },
+  {
+    "id": 8,
+    "author": "Sophia Clark",
+    "date": "2024-06-10",
+    "rating": 5,
+    "text": "Amazing burgers and cozy atmosphere. Perfect spot for a casual meal."
+  },
+  {
+    "id": 9,
+    "author": "James Anderson",
+    "date": "2024-06-08",
+    "rating": 4,
+    "text": "Solid burgers and fast service. Great for a quick lunch."
+  },
+  {
+    "id": 10,
+    "author": "Emma Wilson",
+    "date": "2024-06-05",
+    "rating": 5,
+    "text": "Best burgers in the city! Always fresh ingredients and tasty fries."
+  }
+]

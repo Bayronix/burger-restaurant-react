@@ -27,7 +27,7 @@
   z-index: 2;
 }
 
-.footerDiv {
+.footerNav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,5 +44,31 @@
   font-weight: 500;
   font-size: 40px;
   color: #d67e35;
+  text-decoration: none;
   margin: 0;
+}
+
+.phoneNumber:hover {
+  text-decoration: underline;
+}
+
+.footerNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.footerNav ul li {
+  margin-right: 20px;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
 }

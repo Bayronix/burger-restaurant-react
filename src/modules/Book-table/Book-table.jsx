@@ -10,7 +10,7 @@ const BookTable = () => {
       <div className={styles.bookTableContainer}>
         <div>
           <h3 className={styles.bookTableHeading}>
-            Celebrate at one of the finest restaurants.
+            <b>Celebrate at one of the finest restaurants.</b>
           </h3>
           <p className={styles.bookTableDescription}>
             Only this month, business lunch starting from $2

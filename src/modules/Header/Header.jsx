@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./header.module.css";
 import { MdFoodBank } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -34,7 +33,7 @@ const Header = () => {
         </div>
         <div className={styles.divViewHeader}>
           <h1 className={styles.viewHeaderText}>
-            <b>Welcome to Flame & Bun!</b>
+            Welcome to <b>Flame & Bun!</b>
             <MdFoodBank className={styles.viewClass} />
           </h1>
           <button type="button" className={styles.viewMenuButton}>

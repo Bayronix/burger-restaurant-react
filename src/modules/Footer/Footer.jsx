@@ -53,6 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
+          <h3>Live Your Comment</h3>
         </div>
       </div>
     </footer>
