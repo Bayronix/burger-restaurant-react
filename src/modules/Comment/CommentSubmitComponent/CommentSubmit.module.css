@@ -1,0 +1,49 @@
+/* CommentSubmit.module.css */
+.formContainer {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.formContainer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  background-color: #d67e34;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #de6705c7;
+}

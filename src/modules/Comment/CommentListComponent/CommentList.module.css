@@ -1,0 +1,31 @@
+.commentList {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.commentList h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.commentList li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.commentList li:last-child {
+  border-bottom: none;
+}
+
+.commentList strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.commentList small {
+  display: block;
+  font-size: 0.8em;
+  color: #888;
+}

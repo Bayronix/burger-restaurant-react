@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./Header/Header";
 import AboutUs from "./About-us/About-us";
 import OurHistory from "./Our-history/Our-history";
@@ -10,7 +9,6 @@ import Footer from "./Footer/Footer";
 import BurgerSkills from "./BurgerSkills/BurgerSkills";
 
 function App() {
-  const [count, setCount] = useState(0);
   // cat
   return (
     <>

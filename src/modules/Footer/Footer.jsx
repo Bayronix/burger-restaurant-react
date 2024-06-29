@@ -1,4 +1,6 @@
 import styles from "./footer.module.css";
+import { AiOutlineArrowDown } from "react-icons/ai";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -53,7 +55,12 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
-          <h3>Live Your Comment</h3>
+
+          <h3 className={styles.footerHeading}>
+            Live Your Comment
+            <FaHeart />
+          </h3>
+          <AiOutlineArrowDown className={styles.AiOut} />
         </div>
       </div>
     </footer>

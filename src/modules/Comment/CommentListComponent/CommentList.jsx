@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import styles from "./CommentList.module.css";
 
 const CommentList = ({ comments }) => {
   return (
-    <div>
+    <div className={styles.commentList}>
       <h2>Comments:</h2>
       <ul>
         {comments.map((comment) => (
