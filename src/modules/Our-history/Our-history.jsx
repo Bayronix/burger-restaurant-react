@@ -1,6 +1,6 @@
 import styles from "./history.module.css";
 
-const History = () => {
+const OurHistory = () => {
   return (
     <section className={styles.historySection}>
       <div className={styles.textContainer}>
@@ -28,7 +28,7 @@ const History = () => {
           </li>
         </ul>
         <img
-          src="./public/images/restaurant.jpg"
+          src="./public/images/restaurantBg.jpg"
           alt="Our History"
           className={styles.historyImage}
         />
@@ -37,4 +37,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default OurHistory;
