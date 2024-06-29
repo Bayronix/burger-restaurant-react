@@ -6,8 +6,8 @@ import { PiHamburgerFill } from "react-icons/pi";
 
 const Header = () => {
   return (
-    <header>
-      <div className={styles.headerFirstDiv}>
+    <header className={styles.headerFirstDiv}>
+      <div className={styles.content}>
         <div className={styles.headerDiv}>
           <PiHamburgerFill
             className={styles.headerLogo}
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
         <div className={styles.divViewHeader}>
           <h1 className={styles.viewHeaderText}>
-            Welcome to <b>Flame & Bun!</b>
+            <b>Welcome to Flame & Bun!</b>
             <MdFoodBank className={styles.viewClass} />
           </h1>
           <button type="button" className={styles.viewMenuButton}>

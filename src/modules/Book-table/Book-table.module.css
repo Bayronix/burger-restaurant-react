@@ -1,20 +1,33 @@
 .bookTableSection {
+  position: relative;
   padding: 40px 20px;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/public/images/bg.jpg);
+  background-image: url(/public/images/restaurantBg.jpg);
   background-size: cover;
   background-position: center;
 }
 
+.bookTableSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .bookTableContainer {
   padding: 20px;
-
   max-width: 600px;
   width: 100%;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .bookTableHeading {
@@ -32,7 +45,7 @@
 }
 
 .bookTableButton {
-  background-color: #ff7400;
+  background: #ff7300d4;
   color: #fff;
   border: none;
   min-width: 139px;
@@ -46,5 +59,5 @@
 }
 
 .bookTableButton:hover {
-  background-color: #e66700;
+  background: #de6705c7;
 }

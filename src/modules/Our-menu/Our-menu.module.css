@@ -39,3 +39,21 @@
   color: #666;
   margin: 5px 0 0;
 }
+
+.button {
+  background: #ff7300d4;
+  color: #fff;
+  border: none;
+  min-width: 139px;
+  min-height: 43px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: #de6705c7;
+}

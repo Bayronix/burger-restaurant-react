@@ -1,9 +1,25 @@
 .headerFirstDiv {
+  position: relative;
   min-width: 320px;
-  min-height: 800px;
-  background-image: url(/public/images/hero.jpg);
+  min-height: 600px;
+  background-image: url(/public/images/restaurantBg.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.headerFirstDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
 }
 
 .headerDiv {
@@ -45,7 +61,7 @@
   width: 100%;
   text-align: center;
   min-height: 200px;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -53,7 +69,7 @@
 .viewHeaderText {
   font-weight: 500;
   font-size: 40px;
-  color: #d67e35;
+  color: #f87001;
   margin: 0;
 }
 
@@ -125,7 +141,7 @@
 .viewMenuButton {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #de6705c7;
+  background: #ff7300d4;
   color: white;
   border: none;
   border-radius: 4px;
@@ -134,11 +150,11 @@
 }
 
 .viewMenuButton:hover {
-  background: #ff7300b1;
+  background: #de6705c7;
 }
 
 .viewMenuButton:focus {
-  background: #ff7300d4;
+  background: #de6705c7;
 }
 
 .viewClass {

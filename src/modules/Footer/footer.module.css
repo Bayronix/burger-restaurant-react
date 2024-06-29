@@ -1,107 +1,48 @@
-.headerFirstDiv {
+.footerFirstDiv {
+  position: relative;
   min-width: 320px;
-  min-height: 320px;
-  background-image: url("./src/images/hero\ image.jpg");
+  min-height: 600px;
+  background-image: url(/public/images/restaurantBg.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.headerDiv {
+.footerFirstDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.footerDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 22px;
+  position: relative;
+  z-index: 2;
 }
 
-.headerLogo {
-  max-width: 50px;
-  height: 35px;
-}
-
-.headerNav {
-  flex-grow: 1;
-  margin-left: 20px;
-}
-/* Header Bold Tex */
-
-.headerFirstDiv {
+.footerDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headerDiv {
+.footerDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.divViewHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  min-height: 200px;
-  padding-top: 250px;
-}
-
-.viewHeaderText {
+.phoneNumber {
   font-weight: 500;
   font-size: 40px;
   color: #d67e35;
   margin: 0;
-}
-
-.viewMenuButton {
-  margin-top: 20px;
-}
-
-.navList {
-}
-
-.navItem {
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-}
-
-.navItem:hover {
-  color: #007bff;
-}
-
-.phoneNumber {
-}
-
-.phoneNumber:hover {
-  color: #007bff;
-}
-
-.reservationButton {
-  display: none;
-}
-
-.reservationButton:hover {
-  background-color: #0056b3;
-}
-
-.viewMenuButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ff7400;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.viewMenuButton:hover {
-  background: #ff7300b1;
-}
-
-.viewMenuButton:focus {
-  background: #ff7300d4;
 }
