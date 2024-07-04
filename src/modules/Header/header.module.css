@@ -1,3 +1,6 @@
+/* header.module.css */
+
+/* Mobile-first styles */
 .headerFirstDiv {
   position: relative;
   min-width: 320px;
@@ -17,6 +20,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .content {
   position: relative;
   z-index: 2;
@@ -29,28 +33,14 @@
   padding: 22px;
 }
 
-.headerLogo {
-  max-width: 50px;
-  min-height: 35px;
+.headerLogo,
+.burgerIcon {
+  font-size: 40px;
 }
 
 .headerNav {
   flex-grow: 1;
   margin-left: 20px;
-}
-/* Header Bold Tex */
-
-.headerFirstDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.headerDiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .divViewHeader {
@@ -61,9 +51,7 @@
   width: 100%;
   text-align: center;
   min-height: 200px;
-  padding-top: 150px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 150px 22px;
 }
 
 .viewHeaderText {
@@ -71,71 +59,6 @@
   font-size: 40px;
   color: #f87001;
   margin: 0;
-}
-
-/* MODAL */
-
-/* styles.module.css */
-
-/* Стилі для модального вікна */
-.modal {
-  position: relative;
-}
-
-.modalContent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.burgerMenu {
-}
-
-.headerLogo {
-  width: 50px;
-  height: auto;
-  cursor: pointer;
-}
-
-.burgerIcon {
-  width: 30px;
-  height: auto;
-  cursor: pointer;
-}
-
-.viewMenuButton {
-  margin-top: 20px;
-}
-
-.navList {
-  display: none;
-}
-
-.navItem {
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-}
-
-.navItem:hover {
-  color: #007bff;
-}
-
-.phoneNumber {
-  display: none;
-}
-
-.phoneNumber:hover {
-  color: #007bff;
-}
-
-.reservationButton {
-  display: none;
-}
-
-.reservationButton:hover {
-  background-color: #0056b3;
 }
 
 .viewMenuButton {
@@ -149,14 +72,126 @@
   font-size: 16px;
 }
 
-.viewMenuButton:hover {
-  background: #de6705c7;
-}
-
+.viewMenuButton:hover,
 .viewMenuButton:focus {
   background: #de6705c7;
 }
 
-.viewClass {
-  min-height: 20px;
+.navList {
+  display: none;
+}
+
+.phoneNumber {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .headerFirstDiv {
+    min-height: 600px;
+  }
+
+  .divViewHeader {
+    padding: 200px 50px;
+  }
+
+  .viewHeaderText {
+    font-size: 48px;
+  }
+
+  .headerNav {
+    margin-left: 40px;
+  }
+
+  .navList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .navItem {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navItem:hover {
+    color: #babfc4;
+  }
+
+  .phoneNumber {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .phoneNumber:hover {
+    color: #babfc4;
+  }
+
+  .reservationButton {
+    display: block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .reservationButton:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+  }
+
+  .viewMenuButton {
+    margin-top: 0;
+  }
+  .burgerIcon {
+    display: none;
+  }
+  .headerLogo {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .divViewHeader {
+    padding: 200px 100px;
+  }
+
+  .viewHeaderText {
+    font-size: 56px;
+  }
+
+  .navItem {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+
+  .phoneNumber,
+  .reservationButton {
+    margin-left: 30px;
+  }
+
+  .viewMenuButton {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+  .burgerIcon {
+    display: none;
+  }
+  .headerLogo,
+  .burgerIcon {
+    font-size: 60px;
+  }
 }

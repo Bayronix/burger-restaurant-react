@@ -1,3 +1,4 @@
+/* Common styles for both tablet and desktop */
 .about-u-list {
   list-style-type: none;
   padding: 0;
@@ -24,15 +25,12 @@
 .about-u-title {
   font-size: 1.5rem;
   font-weight: 400;
-  font-size: 26px;
   color: #2c2c2c;
   margin-bottom: 10px;
 }
 
 .about-u-description {
   line-height: 1.5;
-
-  font-weight: 400;
   font-size: 18px;
   color: #656363;
 }
@@ -40,4 +38,53 @@
 .about-u-icon {
   width: 30px;
   height: 30px;
+}
+
+/* Tablet Version */
+@media (min-width: 768px) {
+  .about-u-item {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .about-u-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .about-u-description {
+    font-size: 16px;
+  }
+
+  .about-u-img {
+    border-radius: 8px;
+  }
+
+  .about-u-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  .about-u-item {
+    margin-bottom: 40px;
+    padding: 40px;
+  }
+
+  .about-u-title {
+    font-size: 2.2rem;
+  }
+
+  .about-u-icon {
+    width: 50px;
+    height: 50px;
+  }
 }

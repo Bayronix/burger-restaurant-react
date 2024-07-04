@@ -1,3 +1,4 @@
+/* Common styles */
 .commentList {
   margin: 20px 0;
   padding: 0;
@@ -11,7 +12,7 @@
 
 .commentList li {
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .commentList li:last-child {
@@ -22,10 +23,73 @@
   display: block;
   font-size: 1.2em;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .commentList small {
   display: block;
   font-size: 0.8em;
   color: #888;
+}
+
+/* Style for individual comment */
+.comment {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.comment .comment-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment .comment-author {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment .comment-date {
+  color: #888;
+  font-size: 0.9em;
+}
+.commentAvatar {
+  font-size: 40px;
+}
+
+/* Tablet Version */
+@media (min-width: 768px) {
+  .commentList li {
+    padding: 30px 0;
+  }
+
+  .comment {
+    padding: 20px;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  .commentList {
+    margin: 30px 0;
+  }
+
+  .commentList li {
+    padding: 40px 0;
+  }
+
+  .comment {
+    padding: 25px;
+  }
+
+  .commentList h2 {
+    font-size: 2em;
+  }
+
+  .comment .comment-date {
+    font-size: 1em;
+  }
 }

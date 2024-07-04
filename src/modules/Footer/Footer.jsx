@@ -57,7 +57,7 @@ const Footer = () => {
           </nav>
 
           <h3 className={styles.footerHeading}>
-            Live Your Comment
+            Live Your Feedback
             <FaHeart />
           </h3>
           <AiOutlineArrowDown className={styles.AiOut} />

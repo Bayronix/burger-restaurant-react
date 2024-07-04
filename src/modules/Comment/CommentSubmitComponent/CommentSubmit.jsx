@@ -38,7 +38,9 @@ const CommentSubmit = ({ onAddComment }) => {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="comment">Comment:</label>
+          <label className={styles.label} htmlFor="comment">
+            Comment:
+          </label>
           <Field as="textarea" id="comment" name="text" />
         </div>
 

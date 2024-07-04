@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./header.module.css";
 import { MdFoodBank } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,7 +11,8 @@ const Header = () => {
         <div className={styles.headerDiv}>
           <PiHamburgerFill
             className={styles.headerLogo}
-            style={{ color: "#d67e35" }}
+            style={{ color: "#ff7300d4" }}
+            aria-label="Main Logo"
           />
           <nav className={styles.headerNav}>
             <ul className={styles.navList}>
@@ -21,15 +23,13 @@ const Header = () => {
             </ul>
           </nav>
           <RxHamburgerMenu
-            className={styles.headerLogo}
-            style={{ color: "#d67e35" }}
+            className={styles.burgerIcon}
+            style={{ color: "#ff7300d4" }}
+            aria-label="Hamburger Menu"
           />
           <a href="tel:+1234567890" className={styles.phoneNumber}>
             +1 (234) 567-890
           </a>
-          <button type="button" className={styles.reservationButton}>
-            Table Reservation
-          </button>
         </div>
         <div className={styles.divViewHeader}>
           <h1 className={styles.viewHeaderText}>

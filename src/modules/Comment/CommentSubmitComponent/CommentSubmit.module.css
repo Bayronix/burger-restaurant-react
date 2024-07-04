@@ -1,7 +1,8 @@
 /* CommentSubmit.module.css */
+
 .formContainer {
   margin: 20px 0;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -13,7 +14,7 @@
 }
 
 .formGroup {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .formGroup label {
@@ -26,9 +27,10 @@
 .formGroup select,
 .formGroup textarea {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 .formGroup textarea {
@@ -36,14 +38,60 @@
 }
 
 .submitButton {
-  padding: 10px 15px;
+  padding: 12px 20px;
   background-color: #d67e34;
   color: white;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .submitButton:hover {
   background-color: #de6705c7;
+}
+
+/* Tablet Version */
+@media (min-width: 768px) {
+  .formContainer {
+    padding: 30px;
+  }
+
+  .formGroup {
+    margin-bottom: 20px;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 12px;
+  }
+
+  .submitButton {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  .formContainer {
+    padding: 40px;
+  }
+
+  .formGroup {
+    margin-bottom: 25px;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 15px;
+  }
+
+  .submitButton {
+    padding: 18px 30px;
+    font-size: 20px;
+  }
 }

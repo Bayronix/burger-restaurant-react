@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./about-us.module.css";
 
 import { MdOutlineFastfood } from "react-icons/md";

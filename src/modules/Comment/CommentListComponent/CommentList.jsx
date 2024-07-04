@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
 import styles from "./CommentList.module.css";
+import { MdOutlineStarHalf } from "react-icons/md";
+import { FaUserCircle } from "react-icons/fa";
+
+// Default avatar image URL
 
 const CommentList = ({ comments }) => {
   return (
@@ -7,10 +11,15 @@ const CommentList = ({ comments }) => {
       <h2>Comments:</h2>
       <ul>
         {comments.map((comment) => (
-          <li key={comment.id}>
-            <strong>{comment.author}</strong> - Rating: {comment.rating}
-            <p>{comment.text}</p>
-            <small>{comment.date}</small>
+          <li key={comment.id} className={styles.commentItem}>
+            <FaUserCircle className={styles.commentAvatar} />
+
+            <div className={styles.commentContent}>
+              <strong>{comment.author}</strong> Rating {comment.rating}{" "}
+              <MdOutlineStarHalf />
+              <p>{comment.text}</p>
+              <small>{comment.date}</small>
+            </div>
           </li>
         ))}
       </ul>
@@ -19,7 +28,17 @@ const CommentList = ({ comments }) => {
 };
 
 CommentList.propTypes = {
-  comments: PropTypes.array.isRequired,
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      author: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      rating: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+        .isRequired,
+      text: PropTypes.string.isRequired,
+      avatar: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default CommentList;

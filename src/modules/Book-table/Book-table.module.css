@@ -1,3 +1,4 @@
+/* Common styles */
 .bookTableSection {
   position: relative;
   padding: 40px 20px;
@@ -34,7 +35,7 @@
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  color: #d67e34;
+  color: #f87001;
 }
 
 .bookTableDescription {
@@ -61,4 +62,59 @@
 
 .bookTableButton:hover {
   background: #de6705c7;
+}
+
+/* Tablet Version */
+@media (min-width: 768px) {
+  .bookTableSection {
+    padding: 60px 40px;
+  }
+
+  .bookTableContainer {
+    padding: 30px;
+  }
+
+  .bookTableHeading {
+    font-size: 36px;
+  }
+
+  .bookTableDescription {
+    font-size: 28px;
+    padding-top: 35px;
+  }
+
+  .bookTableButton {
+    min-width: 160px;
+    min-height: 50px;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  .bookTableSection {
+    padding: 80px 60px;
+  }
+
+  .bookTableContainer {
+    padding: 40px;
+    max-width: 800px;
+  }
+
+  .bookTableHeading {
+    font-size: 42px;
+  }
+
+  .bookTableDescription {
+    font-size: 32px;
+    padding-top: 45px;
+  }
+
+  .bookTableButton {
+    min-width: 180px;
+    min-height: 55px;
+    font-size: 20px;
+    margin-top: 60px;
+  }
 }

@@ -1,3 +1,4 @@
+/* Common styles */
 .historySection {
   display: flex;
   justify-content: space-between;
@@ -8,7 +9,6 @@
 
 .textContainer {
   flex: 1;
-
   text-align: center;
 }
 
@@ -50,6 +50,66 @@
   font-size: 20px;
   text-align: center;
   color: #000;
+}
+
+/* Tablet Version */
+@media (min-width: 768px) {
+  .statsList {
+    display: flex;
+  }
+  .historySection {
+    padding: 60px 40px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  .statsList {
+    justify-content: space-around;
+  }
+
+  .statsNumber {
+    font-size: 48px;
+  }
+
+  .statsLabel {
+    font-size: 24px;
+  }
+}
+
+/* Desktop Version */
+@media (min-width: 1200px) {
+  .statsList {
+    display: flex;
+  }
+  .historySection {
+    padding: 80px 60px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-bottom: 90px;
+  }
+
+  .statsNumber {
+    font-size: 56px;
+  }
+
+  .statsLabel {
+    font-size: 28px;
+  }
 }
 
 .imageContainer {
