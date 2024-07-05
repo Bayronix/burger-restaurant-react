@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./header.module.css";
 import { MdFoodBank } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
