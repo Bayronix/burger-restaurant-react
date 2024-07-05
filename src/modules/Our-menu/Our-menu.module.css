@@ -59,6 +59,8 @@
 .button:hover {
   background: #de6705c7;
 }
+.styles.modal {
+}
 
 /* Tablet Version */
 @media (min-width: 768px) {
