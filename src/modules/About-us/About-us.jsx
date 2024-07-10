@@ -17,9 +17,11 @@ const AboutUs = () => {
           <MdOutlineFastfood className={styles["about-u-icon"]} />
           <h3 className={styles["about-u-title"]}>Best Quality Food</h3>
           <p className={styles["about-u-description"]}>
-            The quality of our food is excellent!
+            The quality of our food is excellent! We source our ingredients from
+            the most reputable suppliers.
           </p>
         </li>
+
         <li className={styles["about-u-item"]}>
           <MdOutlineFastfood className={styles["about-u-icon"]} />
           <h3 className={styles["about-u-title"]}>Affordable Food</h3>

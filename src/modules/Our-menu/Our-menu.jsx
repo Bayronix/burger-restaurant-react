@@ -3,21 +3,6 @@ import Modal from "react-modal";
 import styles from "./Our-menu.module.css";
 import DishItem from "./Dishes";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    maxWidth: "80%",
-    maxHeight: "80%",
-    overflow: "auto",
-    zIndex: 1,
-  },
-};
-
 Modal.setAppElement("#root");
 
 const dishes = [
@@ -127,7 +112,7 @@ const OurMenu = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={customStyles}
+        className={styles.modal}
         contentLabel="Order Modal"
       >
         {selectedDish && (
