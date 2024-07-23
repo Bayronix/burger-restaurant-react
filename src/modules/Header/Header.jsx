@@ -15,10 +15,18 @@ const Header = () => {
           />
           <nav className={styles.headerNav}>
             <ul className={styles.navList}>
-              <li className={styles.navItem}>Home Page</li>
-              <li className={styles.navItem}>Menu</li>
-              <li className={styles.navItem}>About Us</li>
-              <li className={styles.navItem}>Reservation</li>
+              <li className={styles.navItem}>
+                <a href="Home">Home Page</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="Menu">Menu</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="About us">About us</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="Reservation">Reservation</a>
+              </li>
             </ul>
           </nav>
           <RxHamburgerMenu
