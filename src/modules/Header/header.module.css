@@ -1,4 +1,7 @@
 /* header.module.css */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Mobile-first styles */
 .headerFirstDiv {

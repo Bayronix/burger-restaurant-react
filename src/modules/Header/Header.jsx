@@ -16,16 +16,13 @@ const Header = () => {
           <nav className={styles.headerNav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="Home">Home Page</a>
+                <a href="#Menu">Menu</a>
               </li>
               <li className={styles.navItem}>
-                <a href="Menu">Menu</a>
+                <a href="#AboutUs">About us</a>
               </li>
               <li className={styles.navItem}>
-                <a href="About us">About us</a>
-              </li>
-              <li className={styles.navItem}>
-                <a href="Reservation">Reservation</a>
+                <a href="#Reservation">Reservation</a>
               </li>
             </ul>
           </nav>

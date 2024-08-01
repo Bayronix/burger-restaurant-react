@@ -6,7 +6,7 @@ const BookTable = () => {
   };
 
   return (
-    <section className={styles.bookTableSection}>
+    <section id="Reservation" className={styles.bookTableSection}>
       <div className={styles.bookTableContainer}>
         <div>
           <h3 className={styles.bookTableHeading}>

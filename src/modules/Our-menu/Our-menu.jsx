@@ -102,7 +102,9 @@ const OurMenu = () => {
 
   return (
     <section className={styles.ourDishesSection}>
-      <h3 className={styles.ourMenu}>Our Menu</h3>
+      <h3 id="Menu" className={styles.ourMenu}>
+        Our Menu
+      </h3>
       <ul className={styles.dishesList}>
         {dishes.map((dish, index) => (
           <DishItem key={index} dish={dish} openModal={openModal} />
