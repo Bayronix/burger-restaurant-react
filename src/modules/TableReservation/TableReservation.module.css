@@ -31,14 +31,14 @@
   z-index: 2;
 }
 
-.bookTableHeading {
-  font-weight: 400;
-  font-size: 30px;
-  text-align: center;
-  color: #f87001;
-}
-
 .bookTableDescription {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  padding-top: 25px;
+}
+.bookTableHeading {
   font-weight: 600;
   font-size: 24px;
   text-align: center;

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Header from "./Header/Header";
 import AboutUs from "./About-us/About-us";
 import OurHistory from "./Our-history/Our-history";
-import BookTable from "./Book-table/Book-table";
+import TableReservation from "./TableReservation/TableReservation.jsx";
 import OurMenu from "./Our-menu/Our-menu";
 import Comment from "./Comment/Comment.jsx";
 import Footer from "./Footer/Footer";
@@ -22,7 +22,7 @@ function App() {
       <AboutUs />
       <OurHistory />
       <BurgerSkills />
-      <BookTable />
+      <TableReservation />
       <OurMenu openModal={openModal} />
       <Footer />
       <Comment />

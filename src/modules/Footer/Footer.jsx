@@ -1,67 +1,36 @@
 import styles from "./footer.module.css";
-import { AiOutlineArrowDown } from "react-icons/ai";
-import { FaHeart } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className={styles.footerFirstDiv}>
-        <div className={styles.footerDiv}>
-          <a href="tel:+1234567890" className={styles.phoneNumber}>
-            +1 (234) 567-890
-          </a>
-
-          <nav className={styles.footerNav}>
-            <ul>
-              <li>
-                <a
-                  rel="nofollow noreferrer noopener"
-                  target="_blank"
-                  href="#"
-                  className={styles.navLink}
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="nofollow noreferrer noopener"
-                  target="_blank"
-                  href="#"
-                  className={styles.navLink}
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="nofollow noreferrer noopener"
-                  target="_blank"
-                  href="#"
-                  className={styles.navLink}
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="nofollow noreferrer noopener"
-                  target="_blank"
-                  href="#"
-                  className={styles.navLink}
-                >
-                  GitHub
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <h3 className={styles.footerHeading}>
-            Live Your Feedback
-            <FaHeart />
-          </h3>
-          <AiOutlineArrowDown className={styles.AiOut} />
-        </div>
+    <footer className={styles.footer}>
+      <div className={styles.footerDiv}>
+        <a href="tel:+1234567890" className={styles.phoneNumber}>
+          +1 (234) 567-890
+        </a>
+        <nav className={styles.footerNav}>
+          <ul>
+            <li>
+              <a href="#Menu" className={styles.navLink}>
+                Menu
+              </a>
+            </li>
+            <li>
+              <a href="#AboutUs" className={styles.navLink}>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#Reservation" className={styles.navLink}>
+                Reservation
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <h2 className={styles.footerHeading}>
+          Follow Us
+          <AiOutlineInstagram className={styles.AiOut} />
+        </h2>
       </div>
     </footer>
   );
