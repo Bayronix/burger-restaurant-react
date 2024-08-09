@@ -4,16 +4,16 @@ import { MdOutlineFastfood } from "react-icons/md";
 const AboutUs = () => {
   return (
     <section id="AboutUs">
-      <h3>About us</h3>
       <ul className={styles["about-u-list"]}>
         <li className={styles["about-u-item"]}>
           <MdOutlineFastfood className={styles["about-u-icon"]} />
-          <h3 className={styles["about-u-title"]}>Magical Atmosphere</h3>
+          <h3 className={styles["about-u-title"]}>Exquisite Cuisine</h3>
           <p className={styles["about-u-description"]}>
-            In our establishment, there is a magical atmosphere filled with
-            delicious aromas.
+            Experience a culinary journey with our expertly crafted dishes made
+            from the finest ingredients.
           </p>
         </li>
+
         <li className={styles["about-u-item"]}>
           <MdOutlineFastfood className={styles["about-u-icon"]} />
           <h3 className={styles["about-u-title"]}>Best Quality Food</h3>

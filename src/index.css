@@ -15,18 +15,18 @@ p {
 
 /* Example of font usage */
 h1 {
-  font-family: "Tinos", serif; /* Tinos Regular */
-  font-weight: 400; /* Regular weight */
+  font-family: "Tinos", serif;
+  font-weight: 400;
 }
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600; /* Open Sans SemiBold */
+  font-weight: 600;
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700; /* Open Sans Bold */
+  font-weight: 700;
 }
 
 p {
@@ -43,7 +43,6 @@ em {
   font-family: "Cookie", cursive;
 }
 
-/* Reset margin and padding for lists */
 ul,
 ol {
   margin: 0;

@@ -2,104 +2,10 @@ import { useState } from "react";
 import Modal from "react-modal";
 import styles from "./Our-menu.module.css";
 import DishItem from "./Dishes";
-
+import dishes from "./Dishes.json";
 Modal.setAppElement("#root");
 
-const dishes = [
-  {
-    name: "Hamburger",
-    price: 3,
-    image: "/images/burger1.jpg",
-    components: [
-      "Bun",
-      "Beef Patty",
-      "Lettuce",
-      "Tomato",
-      "Onion",
-      "Pickles",
-      "Ketchup",
-      "Mustard",
-    ],
-  },
-  {
-    name: "Cheeseburger",
-    price: 5,
-    image: "/images/burger2.jpg",
-    components: [
-      "Bun",
-      "Beef Patty",
-      "Cheese",
-      "Lettuce",
-      "Tomato",
-      "Onion",
-      "Pickles",
-      "Ketchup",
-      "Mustard",
-    ],
-  },
-  {
-    name: "Bacon Burger",
-    price: 4,
-    image: "/images/burger3.jpg",
-    components: [
-      "Bun",
-      "Beef Patty",
-      "Bacon",
-      "Cheese",
-      "Lettuce",
-      "Tomato",
-      "Onion",
-      "Pickles",
-      "Ketchup",
-      "Mustard",
-    ],
-  },
-  {
-    name: "Vegetarian Burger",
-    price: 7,
-    image: "/images/burger4.jpg",
-    components: [
-      "Bun",
-      "Vegetarian Patty",
-      "Lettuce",
-      "Tomato",
-      "Onion",
-      "Pickles",
-      "Ketchup",
-      "Mustard",
-    ],
-  },
-  {
-    name: "Turkey Burger",
-    price: 9,
-    image: "/images/burger5.jpg",
-    components: [
-      "Bun",
-      "Turkey Patty",
-      "Lettuce",
-      "Tomato",
-      "Onion",
-      "Pickles",
-      "Ketchup",
-      "Mustard",
-    ],
-  },
-];
-
-const OurMenu = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedDish, setSelectedDish] = useState(null);
-
-  const openModal = (dish) => {
-    setSelectedDish(dish);
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-    setSelectedDish(null);
-  };
-
+const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
   return (
     <section className={styles.ourDishesSection}>
       <h3 id="Menu" className={styles.ourMenu}>
@@ -107,7 +13,7 @@ const OurMenu = () => {
       </h3>
       <ul className={styles.dishesList}>
         {dishes.map((dish, index) => (
-          <DishItem key={index} dish={dish} openModal={openModal} />
+          <DishItem key={index} dish={dish} openModal={() => openModal(dish)} />
         ))}
       </ul>
 

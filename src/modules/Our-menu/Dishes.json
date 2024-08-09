@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Hamburger",
+    "price": 3,
+    "image": "/images/burger1.jpg",
+    "components": [
+      "Bun",
+      "Beef Patty",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Ketchup",
+      "Mustard"
+    ]
+  },
+  {
+    "name": "Cheeseburger",
+    "price": 5,
+    "image": "/images/burger2.jpg",
+    "components": [
+      "Bun",
+      "Beef Patty",
+      "Cheese",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Ketchup",
+      "Mustard"
+    ]
+  },
+  {
+    "name": "Bacon Burger",
+    "price": 4,
+    "image": "/images/burger3.jpg",
+    "components": [
+      "Bun",
+      "Beef Patty",
+      "Bacon",
+      "Cheese",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Ketchup",
+      "Mustard"
+    ]
+  },
+  {
+    "name": "Vegetarian Burger",
+    "price": 7,
+    "image": "/images/burger4.jpg",
+    "components": [
+      "Bun",
+      "Vegetarian Patty",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Ketchup",
+      "Mustard"
+    ]
+  },
+  {
+    "name": "Turkey Burger",
+    "price": 9,
+    "image": "/images/burger5.jpg",
+    "components": [
+      "Bun",
+      "Turkey Patty",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Ketchup",
+      "Mustard"
+    ]
+  }
+]

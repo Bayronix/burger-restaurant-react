@@ -1,0 +1,8 @@
+.backgroundApp {
+  background-image: url(/public/images/restaurantBg.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+}

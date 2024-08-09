@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
   z-index: 1;
 }
 
@@ -28,14 +28,29 @@
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .phoneNumber {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
-  display: block;
+  display: flex;
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.phoneNumber:hover {
+  color: #ffdd57; /* Hover color effect */
+}
+
+.contactFooter {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 
 .footerNav ul {
@@ -44,26 +59,30 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  gap: 20px; /* Add some space between items */
 }
 
 .footerNav ul li {
-  margin: 0 10px;
+  margin: 0;
 }
 
 .navLink {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .navLink:hover {
+  color: #ffdd57; /* Hover color effect */
   text-decoration: underline;
 }
 
 .footerHeading {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -73,11 +92,20 @@
 }
 
 .AiOut {
+  display: flex;
+  gap: 30px; /* Increased gap between social icons */
+  justify-content: center;
+}
+
+.svgNav {
   font-size: 2rem;
   color: #fff;
-  margin: 20px auto 0;
-  display: block;
-  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.svgNav:hover {
+  color: #ffdd57; /* Hover color effect */
+  transform: scale(1.2); /* Scale effect on hover */
 }
 
 @media (min-width: 768px) {
@@ -86,6 +114,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    text-align: left;
   }
 
   .phoneNumber {

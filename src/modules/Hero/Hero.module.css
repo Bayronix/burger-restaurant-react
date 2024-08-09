@@ -1,0 +1,40 @@
+.divViewHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  min-height: 400px;
+  padding: 150px 14px;
+}
+
+.viewHeaderText {
+  font-weight: 500;
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff; /* Білий текст для темного фону */
+
+  margin: 0;
+}
+.b {
+  text-shadow: 2px 2px 4px #ff8c00;
+}
+
+.viewMenuButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff7300d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.viewClass {
+  filter: drop-shadow(2px 2px 4px #ff3f3f);
+}
+.spanB {
+  text-shadow: 2px 2px 4px #ff7300d4;
+}
