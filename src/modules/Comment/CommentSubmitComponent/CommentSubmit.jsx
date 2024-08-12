@@ -19,7 +19,7 @@ const CommentSubmit = ({ onAddComment }) => {
   return (
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
       <Form className={styles.formContainer}>
-        <h2>Comments</h2>
+        <h2 id="Comments">Comments</h2>
 
         <div className={styles.formGroup}>
           <label htmlFor="name">Name:</label>

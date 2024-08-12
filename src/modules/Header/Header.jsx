@@ -48,8 +48,8 @@ const Header = ({ modalIsOpen }) => {
                 </a>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navAncor} href="#AboutUs">
-                  Cat
+                <a className={styles.navAncor} href="#Comments">
+                  Comments
                 </a>
               </li>
             </ul>
