@@ -127,6 +127,11 @@ ul {
     text-decoration: none;
     color: white;
   }
+
+  .navAncor:hover {
+    color: #ffdd57;
+    transform: scale(1.2);
+  }
   .navItem:hover {
     color: #babfc4;
   }
@@ -140,7 +145,7 @@ ul {
   }
 
   .phoneNumber:hover {
-    color: #babfc4;
+    color: #ffdd57;
   }
 
   .reservationButton {
@@ -258,13 +263,17 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .burgerIcon {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .headerNav {
+    display: none;
+  }
+  .burgerIcon {
+    display: flex;
+    font-size: 50px;
+  }
+  .phoneNumber {
     display: none;
   }
 }

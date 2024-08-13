@@ -133,9 +133,24 @@
 }
 
 .modalImage {
-  width: 100%;
+  width: 500px;
 
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 20px;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 20px;
 }

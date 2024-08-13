@@ -29,7 +29,11 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.viewMenuButton:hover {
+  background: #de6705c7;
 }
 
 .viewClass {

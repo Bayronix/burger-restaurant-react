@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import styles from "./Our-menu.module.css";
 import DishItem from "./Dishes";
 import dishes from "./Dishes.json";
+import { IoMdClose } from "react-icons/io";
 Modal.setAppElement("#root");
 
 const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
@@ -25,10 +26,10 @@ const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
       >
         {selectedDish && (
           <>
-            <h2>{selectedDish.name}</h2>
-            <button className={styles.modalButton} onClick={closeModal}>
-              Close
-            </button>
+            <div className={styles.modalHeader}>
+              <h2>{selectedDish.name}</h2>
+              <IoMdClose className={styles.close} onClick={closeModal} />
+            </div>
             <img
               src={selectedDish.image}
               alt={selectedDish.name}
