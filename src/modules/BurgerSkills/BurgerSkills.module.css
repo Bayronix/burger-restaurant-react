@@ -1,0 +1,67 @@
+.techSkills {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.ribbonContainer {
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.ribbon {
+  background: #d67e34;
+}
+
+.transparent {
+  color: var(--green-text-color);
+  background: var(--gray-color-bg);
+  transform: rotate(2deg);
+}
+
+.skills {
+  display: flex;
+  width: 200%;
+  animation: marqueeLine 10s linear infinite;
+}
+
+.skillList {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 32px 0px;
+  white-space: nowrap;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .techSkills {
+    padding-bottom: 62px;
+  }
+  .ribbon,
+  .transparent {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .techSkills {
+    padding-bottom: 82px;
+  }
+}

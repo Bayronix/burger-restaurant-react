@@ -1,9 +1,10 @@
-import { useState } from "react";
 import Modal from "react-modal";
+import PropTypes from "prop-types";
 import styles from "./Our-menu.module.css";
 import DishItem from "./Dishes";
 import dishes from "./Dishes.json";
 import { IoMdClose } from "react-icons/io";
+
 Modal.setAppElement("#root");
 
 const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
@@ -51,6 +52,18 @@ const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
       </Modal>
     </section>
   );
+};
+
+OurMenu.propTypes = {
+  openModal: PropTypes.func.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  modalIsOpen: PropTypes.bool.isRequired,
+  selectedDish: PropTypes.shape({
+    name: PropTypes.string,
+    image: PropTypes.string,
+    price: PropTypes.number,
+    components: PropTypes.arrayOf(PropTypes.string),
+  }),
 };
 
 export default OurMenu;

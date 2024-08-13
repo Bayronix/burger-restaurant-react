@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-
+import PropTypes from "prop-types";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { PiHamburgerFill } from "react-icons/pi";
 import { useState } from "react";
@@ -109,6 +109,10 @@ const Header = ({ modalIsOpen }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  modalIsOpen: PropTypes.bool.isRequired,
 };
 
 export default Header;
