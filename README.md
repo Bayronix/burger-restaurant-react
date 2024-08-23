@@ -1,2 +1,2 @@
-![GitHub Logo](public/images/Screenshot%202024-08-14%20164032ау.png)
+![GitHub Logo](public/images/restaurantBg.jpg)
 I independently developed this website to explore and deepen my understanding of React, a technology I was eager to learn. Although the site is relatively small in scope compared to larger React applications, the experience was highly engaging and allowed me to experiment with key features of the framework. This project not only enhanced my technical skills but also reinforced my ability to manage the entire development process from concept to deployment.
