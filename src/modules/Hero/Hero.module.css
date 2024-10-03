@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   min-height: 400px;
-  padding: 150px 14px;
+  padding: 100px 14px;
 }
 
 .viewHeaderText {
@@ -14,7 +14,6 @@
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
-
   margin: 0;
 }
 .b {
@@ -30,10 +29,6 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
-}
-
-.viewMenuButton:hover {
-  background: #de6705c7;
 }
 
 .viewClass {

@@ -1,6 +1,5 @@
 .techSkills {
   width: 100%;
-  padding-bottom: 40px;
 }
 
 .ribbonContainer {
@@ -43,7 +42,7 @@
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
   to {
     transform: translateX(0);
@@ -51,9 +50,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .techSkills {
-    padding-bottom: 62px;
-  }
   .ribbon,
   .transparent {
     font-size: 32px;
@@ -61,7 +57,4 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .techSkills {
-    padding-bottom: 82px;
-  }
 }

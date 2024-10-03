@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./Header/Header";
-import Hero from "./Hero/Hero.jsx";
+import Hero from "./Hero/Hero";
 import AboutUs from "./About-us/About-us";
 import OurHistory from "./Our-history/Our-history";
-import TableReservation from "./TableReservation/TableReservation.jsx";
+import TableReservation from "./TableReservation/TableReservation";
 import OurMenu from "./Our-menu/Our-menu";
-import Comment from "./Comment/Comment.jsx";
+import Comment from "./Comment/Comment";
 import Footer from "./Footer/Footer";
 import BurgerSkills from "./BurgerSkills/BurgerSkills";
 import styles from "./App.module.css";
@@ -26,26 +27,41 @@ function App() {
   };
 
   return (
-    <>
-      <div className={styles.backgroundApp}>
-        <Header modalIsOpen={modalIsOpen} />
-        <Hero />
-      </div>
+    <div className={styles.backgroundApp}>
+      <Header modalIsOpen={modalIsOpen} />
+      <Hero />
       <BurgerSkills />
-      <OurMenu
-        openModal={openModal}
-        closeModal={closeModal}
-        modalIsOpen={modalIsOpen}
-        selectedDish={selectedDish}
-      />
+      <Routes>
+        <Route
+          path="/OurMenu"
+          element={
+            <OurMenu
+              openModal={openModal}
+              closeModal={closeModal}
+              modalIsOpen={modalIsOpen}
+              selectedDish={selectedDish}
+            />
+          }
+        />
+        <Route
+          path="/Reservation"
+          element={
+            <TableReservation
+              modalIsOpen={modalIsOpen}
+              openModal={openModal}
+              closeModal={closeModal}
+            />
+          }
+        />
+        {/* <Route path="/OurHistory" element={<OurHistory />} />  */}
+        <Route path="/AboutUs" element={<AboutUs />} />
 
-      <TableReservation />
-      <OurHistory />
-      <AboutUs />
-      <BurgerSkills />
-      <Footer />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+
       <Comment />
-    </>
+      <Footer />
+    </div>
   );
 }
 

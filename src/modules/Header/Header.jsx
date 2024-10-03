@@ -4,6 +4,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { PiHamburgerFill } from "react-icons/pi";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import Auth from "../../auth/auth";
+import { NavLink } from "react-router-dom";
 
 const Header = ({ modalIsOpen }) => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -15,12 +17,13 @@ const Header = ({ modalIsOpen }) => {
   const closeBurgerMenu = () => {
     setIsBurgerMenuOpen(false);
   };
-  const isModal = modalIsOpen;
 
   return (
     <header
-      className={styles.headerFirstDiv}
-      style={{ position: isModal ? "absolute" : "fixed" }}
+      className={`${styles.headerFirstDiv} ${
+        modalIsOpen ? styles.headerNoBackground : ""
+      }`}
+      style={{ position: modalIsOpen ? "absolute" : "fixed" }}
     >
       <div className={styles.content}>
         <div className={styles.headerDiv}>
@@ -32,25 +35,19 @@ const Header = ({ modalIsOpen }) => {
           <nav className={styles.headerNav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a className={styles.navAncor} href="#Menu">
+                <NavLink to="/OurMenu" className={styles.navAncor}>
                   Menu
-                </a>
+                </NavLink>
               </li>
-
               <li className={styles.navItem}>
-                <a className={styles.navAncor} href="#Reservation">
+                <NavLink to="/Reservation" className={styles.navAncor}>
                   Reservation
-                </a>
+                </NavLink>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navAncor} href="#AboutUs">
+                <NavLink to="/AboutUs" className={styles.navAncor}>
                   About us
-                </a>
-              </li>
-              <li className={styles.navItem}>
-                <a className={styles.navAncor} href="#Comments">
-                  Comments
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -61,7 +58,6 @@ const Header = ({ modalIsOpen }) => {
               aria-label="Hamburger Menu"
             />
           </div>
-
           <div
             className={`${styles.burgerMenu} ${
               isBurgerMenuOpen ? "" : styles.hidden
@@ -72,31 +68,31 @@ const Header = ({ modalIsOpen }) => {
               <nav className={styles.burgerNav}>
                 <ul>
                   <li>
-                    <a
-                      href="#Menu"
+                    <NavLink
+                      to="/OurMenu"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
                       Menu
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="#AboutUs"
+                    <NavLink
+                      to="/AboutUs"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
                       About us
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="#Reservation"
+                    <NavLink
+                      to="/Reservation"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
                       Reservation
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </nav>
@@ -105,6 +101,7 @@ const Header = ({ modalIsOpen }) => {
           <a href="tel:+1234567890" className={styles.phoneNumber}>
             +1 (234) 567-890
           </a>
+          <Auth />
         </div>
       </div>
     </header>

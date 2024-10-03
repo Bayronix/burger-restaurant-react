@@ -37,13 +37,13 @@ const OurMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
               className={styles.modalImage}
             />
 
-            <p>Price: ${selectedDish.price}</p>
             <h4>Components:</h4>
             <ul>
               {selectedDish.components.map((component, index) => (
                 <li key={index}>{component}</li>
               ))}
             </ul>
+            <p>Price: ${selectedDish.price}</p>
             <button className={styles.modalButton} onClick={closeModal}>
               Order
             </button>

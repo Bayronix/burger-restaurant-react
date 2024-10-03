@@ -17,8 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .footerDiv {
@@ -39,11 +38,11 @@
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
 .phoneNumber:hover {
-  color: #ffdd57; /* Hover color effect */
+  color: #ffdd57;
 }
 
 .contactFooter {
@@ -59,7 +58,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 20px; /* Add some space between items */
+  gap: 20px;
 }
 
 .footerNav ul li {
@@ -70,11 +69,11 @@
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
 .navLink:hover {
-  color: #ffdd57; /* Hover color effect */
+  color: #ffdd57;
   text-decoration: underline;
 }
 
@@ -93,19 +92,19 @@
 
 .AiOut {
   display: flex;
-  gap: 30px; /* Increased gap between social icons */
+  gap: 30px;
   justify-content: center;
 }
 
 .svgNav {
   font-size: 2rem;
   color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .svgNav:hover {
-  color: #ffdd57; /* Hover color effect */
-  transform: scale(1.2); /* Scale effect on hover */
+  color: #ffdd57;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {

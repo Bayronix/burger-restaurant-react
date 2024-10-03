@@ -1,12 +1,18 @@
 import styles from "./TableReservation.module.css";
+import PropTypes from "prop-types";
 
-const TableReservation = () => {
+const TableReservation = ({ modalIsOpen }) => {
   const handleReservation = () => {
     alert("Table reserved!");
   };
 
   return (
-    <section id="Reservation" className={styles.bookTableSection}>
+    <section
+      id="Reservation"
+      className={`${styles.bookTableSection} ${
+        modalIsOpen ? styles.NoBackground : ""
+      }`}
+    >
       <div className={styles.bookTableContainer}>
         <div>
           <h3 className={styles.bookTableHeading}>
@@ -19,6 +25,10 @@ const TableReservation = () => {
       </div>
     </section>
   );
+};
+
+TableReservation.propTypes = {
+  modalIsOpen: PropTypes.bool.isRequired,
 };
 
 export default TableReservation;
