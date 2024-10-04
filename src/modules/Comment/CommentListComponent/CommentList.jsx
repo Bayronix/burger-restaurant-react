@@ -1,9 +1,15 @@
 import PropTypes from "prop-types";
 import styles from "./CommentList.module.css";
-import { MdOutlineStarHalf } from "react-icons/md";
+import { MdOutlineStarHalf } from "react-icons/md"; // You can change this to full star icons if needed
 import { FaUserCircle } from "react-icons/fa";
 
-// Default avatar image URL
+const renderStars = (rating) => {
+  const stars = [];
+  for (let i = 0; i < rating; i++) {
+    stars.push(<MdOutlineStarHalf key={i} className={styles.starIcon} />);
+  }
+  return stars;
+};
 
 const CommentList = ({ comments }) => {
   return (
@@ -15,8 +21,11 @@ const CommentList = ({ comments }) => {
             <FaUserCircle className={styles.commentAvatar} />
 
             <div className={styles.commentContent}>
-              <strong>{comment.author}</strong> Rating {comment.rating}{" "}
-              <MdOutlineStarHalf />
+              <strong>{comment.author}</strong>
+              <div className={styles.rating}>
+                Rating: {comment.rating}
+                {renderStars(comment.rating)}
+              </div>
               <p>{comment.text}</p>
               <small>{comment.date}</small>
             </div>

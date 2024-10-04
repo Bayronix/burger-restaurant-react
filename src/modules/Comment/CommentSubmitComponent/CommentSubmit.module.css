@@ -1,5 +1,8 @@
 /* CommentSubmit.module.css */
-
+.feedback {
+  display: flex;
+  justify-content: center;
+}
 .formContainer {
   margin: 20px 0;
   padding: 20px;
@@ -7,8 +10,7 @@
   border-radius: 5px;
   background-color: #f9f9f9;
 }
-
-.formContainer h2 {
+і .formContainer h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -39,7 +41,7 @@
 
 .submitButton {
   padding: 12px 20px;
-  background-color: #d67e34;
+  background: #ff7300d4;
   color: white;
   border: none;
   border-radius: 3px;

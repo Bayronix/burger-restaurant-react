@@ -6,10 +6,11 @@ import Hero from "./Hero/Hero";
 import AboutUs from "./About-us/About-us";
 import OurHistory from "./Our-history/Our-history";
 import TableReservation from "./TableReservation/TableReservation";
-import OurMenu from "./Our-menu/Our-menu";
+import Menu from "./Our-menu/Menu";
 import Comment from "./Comment/Comment";
 import Footer from "./Footer/Footer";
 import BurgerSkills from "./BurgerSkills/BurgerSkills";
+import Description from "./Description/Description";
 import styles from "./App.module.css";
 
 function App() {
@@ -32,17 +33,8 @@ function App() {
       <Hero />
       <BurgerSkills />
       <Routes>
-        <Route
-          path="/OurMenu"
-          element={
-            <OurMenu
-              openModal={openModal}
-              closeModal={closeModal}
-              modalIsOpen={modalIsOpen}
-              selectedDish={selectedDish}
-            />
-          }
-        />
+        <Route path="/OurMenu" element={<Menu />} />
+        ;
         <Route
           path="/Reservation"
           element={
@@ -54,13 +46,13 @@ function App() {
           }
         />
         {/* <Route path="/OurHistory" element={<OurHistory />} />  */}
-        <Route path="/AboutUs" element={<AboutUs />} />
-
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
-
-      <Comment />
+      <AboutUs />
+      <OurHistory />
+      <Description />
       <Footer />
+      <Comment />
     </div>
   );
 }

@@ -1,11 +1,15 @@
 /* Common styles */
-.ourMenu {
-}
 
 .ourDishesSection {
+  text-align: center;
+  background-image: url("../../../../public/images/openart-a-rustic-rectangular-wooden-board-with-a-natural-grain-texture-the-surface\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.divOurDishesSection {
   padding: 40px 20px;
   background-color: #fff;
-  text-align: center;
 }
 
 .dishesList {

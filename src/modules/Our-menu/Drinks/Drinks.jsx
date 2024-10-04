@@ -1,7 +1,7 @@
-import styles from "./Our-menu.module.css";
+import styles from "./Drinks.module.css";
 import PropTypes from "prop-types";
 
-const DishItem = ({ dish, openModal }) => {
+const DrinksItem = ({ dish, openModal }) => {
   return (
     <li className={styles.dishItem}>
       <img src={dish.image} alt={dish.name} className={styles.dishItemImage} />
@@ -14,14 +14,13 @@ const DishItem = ({ dish, openModal }) => {
   );
 };
 
-DishItem.propTypes = {
+DrinksItem.propTypes = {
   dish: PropTypes.shape({
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
-    components: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   openModal: PropTypes.func.isRequired,
 };
 
-export default DishItem;
+export default DrinksItem;

@@ -45,10 +45,11 @@ const Header = ({ modalIsOpen }) => {
                 </NavLink>
               </li>
               <li className={styles.navItem}>
-                <NavLink to="/AboutUs" className={styles.navAncor}>
-                  About us
-                </NavLink>
+                <a href="#Comments" className={styles.navAncor}>
+                  Comments
+                </a>
               </li>
+              <li className={styles.navItem}></li>
             </ul>
           </nav>
           <div className={styles.burgerIcon} onClick={toggleBurgerMenu}>
@@ -78,15 +79,6 @@ const Header = ({ modalIsOpen }) => {
                   </li>
                   <li>
                     <NavLink
-                      to="/AboutUs"
-                      className={styles.navLink}
-                      onClick={closeBurgerMenu}
-                    >
-                      About us
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
                       to="/Reservation"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
@@ -94,13 +86,16 @@ const Header = ({ modalIsOpen }) => {
                       Reservation
                     </NavLink>
                   </li>
+                  <li>
+                    <a href="#Comments" className={styles.navLink}>
+                      Comments
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
           </div>
-          <a href="tel:+1234567890" className={styles.phoneNumber}>
-            +1 (234) 567-890
-          </a>
+
           <Auth />
         </div>
       </div>
