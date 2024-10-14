@@ -15,7 +15,7 @@ import styles from "./App.module.css";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedDish, setSelectedDish] = useState(null);
+  const [setSelectedDish] = useState(null);
 
   const openModal = (dish) => {
     setSelectedDish(dish);

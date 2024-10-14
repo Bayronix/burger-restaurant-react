@@ -1,3 +1,4 @@
+
 import styles from "./header.module.css";
 import PropTypes from "prop-types";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,8 +7,11 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import Auth from "../../auth/auth";
 import { NavLink } from "react-router-dom";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useTranslation } from 'react-i18next';
 
 const Header = ({ modalIsOpen }) => {
+  const { t } = useTranslation(); 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
   const toggleBurgerMenu = () => {
@@ -36,20 +40,20 @@ const Header = ({ modalIsOpen }) => {
             <ul className={styles.navList}>
               <li className={styles.navItem}>
                 <NavLink to="/OurMenu" className={styles.navAncor}>
-                  Menu
+                  {t('menu')}
                 </NavLink>
               </li>
               <li className={styles.navItem}>
                 <NavLink to="/Reservation" className={styles.navAncor}>
-                  Reservation
+                  {t('reservation')} 
                 </NavLink>
               </li>
+              
               <li className={styles.navItem}>
                 <a href="#Comments" className={styles.navAncor}>
-                  Comments
-                </a>
+                 {t('comments')} {/* Use translation */}
+                    </a>
               </li>
-              <li className={styles.navItem}></li>
             </ul>
           </nav>
           <div className={styles.burgerIcon} onClick={toggleBurgerMenu}>
@@ -74,7 +78,7 @@ const Header = ({ modalIsOpen }) => {
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
-                      Menu
+                      {t('menu')} {/* Використовуйте переклад */}
                     </NavLink>
                   </li>
                   <li>
@@ -83,12 +87,12 @@ const Header = ({ modalIsOpen }) => {
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
-                      Reservation
+                      {t('reservation')} {/* Використовуйте переклад */}
                     </NavLink>
                   </li>
                   <li>
                     <a href="#Comments" className={styles.navLink}>
-                      Comments
+                      {t('comments')} {}
                     </a>
                   </li>
                 </ul>
@@ -97,6 +101,7 @@ const Header = ({ modalIsOpen }) => {
           </div>
 
           <Auth />
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

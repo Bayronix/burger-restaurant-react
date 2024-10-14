@@ -1,5 +1,7 @@
+import { useTransition } from "react";
 import styles from "./Hero.module.css";
 import { MdFoodBank } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 const handleViewMenuClick = () => {
   const menuSection = document.getElementById("Menu");
   if (menuSection) {
@@ -9,10 +11,11 @@ const handleViewMenuClick = () => {
 //  ???????
 
 const Hero = () => {
+  const {t} = useTranslation()
   return (
     <div className={styles.divViewHeader}>
       <h1 className={styles.viewHeaderText}>
-        Welcome to{" "}
+        {t("welcome")}{" "}
         <b className={styles.b}>
           Flame <span className={styles.spanB}> & </span>Bun!
         </b>
@@ -23,7 +26,7 @@ const Hero = () => {
         className={styles.viewMenuButton}
         onClick={handleViewMenuClick}
       >
-        View Menu
+        {t("viewBotton")}
       </button>
     </div>
   );

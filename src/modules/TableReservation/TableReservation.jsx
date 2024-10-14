@@ -1,26 +1,27 @@
 import styles from "./TableReservation.module.css";
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 const TableReservation = ({ modalIsOpen }) => {
+  const { t } = useTranslation(); 
+
   const handleReservation = () => {
-    alert("Table reserved!");
+    alert(t('tableReserved')); 
   };
 
   return (
     <section
       id="Reservation"
-      className={`${styles.bookTableSection} ${
-        modalIsOpen ? styles.NoBackground : ""
-      }`}
+      className={`${styles.bookTableSection} ${modalIsOpen ? styles.NoBackground : ""}`}
     >
       <div className={styles.bookTableContainer}>
         <div>
           <h3 className={styles.bookTableHeading}>
-            <b>Celebrate at one of the finest restaurants.</b>
+            <b>{t('reservationTitle')}</b> 
           </h3>
         </div>
         <button className={styles.bookTableButton} onClick={handleReservation}>
-          Table Reservation
+          {t('tableReservation')} 
         </button>
       </div>
     </section>
