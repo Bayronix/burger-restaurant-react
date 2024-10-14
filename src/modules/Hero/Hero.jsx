@@ -1,4 +1,4 @@
-import { useTransition } from "react";
+
 import styles from "./Hero.module.css";
 import { MdFoodBank } from "react-icons/md";
 import { useTranslation } from "react-i18next";
