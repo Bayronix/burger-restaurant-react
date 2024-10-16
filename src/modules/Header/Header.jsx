@@ -31,13 +31,24 @@ const Header = ({ modalIsOpen }) => {
     >
       <div className={styles.content}>
         <div className={styles.headerDiv}>
-          <PiHamburgerFill
+        <PiHamburgerFill
             className={styles.headerLogo}
             style={{ color: "#ff7300d4" }}
             aria-label="Main Logo"
           />
+          
           <nav className={styles.headerNav}>
-            <ul className={styles.navList}>
+          
+           <ul className={styles.navList}>
+          
+            <li className={styles.navItem}>
+              <NavLink
+              to="/"
+              className={styles.navAncor}
+              >
+              {t('homePage')} 
+               </NavLink>
+            </li>
               <li className={styles.navItem}>
                 <NavLink to="/OurMenu" className={styles.navAncor}>
                   {t('menu')}
@@ -48,12 +59,7 @@ const Header = ({ modalIsOpen }) => {
                   {t('reservation')} 
                 </NavLink>
               </li>
-              
-              <li className={styles.navItem}>
-                <a href="#Comments" className={styles.navAncor}>
-                 {t('comments')} {/* Use translation */}
-                    </a>
-              </li>
+            
             </ul>
           </nav>
           <div className={styles.burgerIcon} onClick={toggleBurgerMenu}>
@@ -72,13 +78,22 @@ const Header = ({ modalIsOpen }) => {
               <IoMdClose className={styles.close} onClick={closeBurgerMenu} />
               <nav className={styles.burgerNav}>
                 <ul>
+                <li>
+                    <NavLink
+                      to="/HomePage"
+                      className={styles.navLink}
+                      onClick={closeBurgerMenu}
+                    >
+                      {t('homePage')} 
+                    </NavLink>
+                  </li>
                   <li>
                     <NavLink
                       to="/OurMenu"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
-                      {t('menu')} {/* Використовуйте переклад */}
+                      {t('menu')} 
                     </NavLink>
                   </li>
                   <li>
@@ -87,14 +102,11 @@ const Header = ({ modalIsOpen }) => {
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >
-                      {t('reservation')} {/* Використовуйте переклад */}
+                      {t('reservation')} 
                     </NavLink>
                   </li>
-                  <li>
-                    <a href="#Comments" className={styles.navLink}>
-                      {t('comments')} {}
-                    </a>
-                  </li>
+                 
+                  
                 </ul>
               </nav>
             </div>

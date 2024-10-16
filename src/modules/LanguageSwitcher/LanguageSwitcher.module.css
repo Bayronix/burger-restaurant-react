@@ -1,0 +1,32 @@
+.ulSwitcher {
+    display: flex;
+    justify-content: baseline;
+}
+
+.liSwitcher {
+    display: flex;
+    margin: 10px;
+}
+
+.switcherButton {
+    min-width: 60px;
+    min-height: 30px;
+    size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px; 
+    background-color: #ff7300d4; 
+    display: flex;
+    align-items: center; 
+}
+
+.switcherButton span {
+    margin-right: 5px; 
+    font-size: 1.2em; 
+}
+
+.flag { 
+    margin-right: 5px;
+}

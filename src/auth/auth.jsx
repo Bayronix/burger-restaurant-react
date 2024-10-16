@@ -2,16 +2,15 @@ import styles from "./auth.module.css";
 import { NavLink } from "react-router-dom";
 const Auth = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <NavLink to="/Login">LOGIN</NavLink>
+    <div className={styles.divAuth}>
+      <ul className={styles.ulAuth} >
+        <li  className={styles.navItem}>
+          <NavLink className={styles.liAuth} to="/Login">Login</NavLink>
         </li>
-        {/* власна сторінка  */}
         <li className={styles.navItem}>
-          <NavLink to="/Register">REGISTER</NavLink>
+          <NavLink className={styles.liAuth} to="/Register">Register</NavLink>
         </li>
-        {/* власна сторінка */}
+        
       </ul>
     </div>
   );

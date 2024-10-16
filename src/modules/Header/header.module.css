@@ -78,7 +78,8 @@ ul {
 }
 
 .navList {
-  display: none;
+  display: flex;
+  justify-content: baseline;
   gap: 20px;
 }
 

@@ -15,6 +15,7 @@ i18n
           pickupTitle: "Order and Pick Up at Your Convenience",
           pickupIntro: "In a hurry and don’t want to wait in line? Pre-order your meal online and pick it up at the restaurant. Simply choose your favorite items from our menu, select the nearest Flame & Bun location, and your food will be ready when you arrive. Use our website or the Flame & Bun app to explore our wide selection of burgers, sides, refreshing beverages, and delectable desserts. It's the quickest and most convenient way to enjoy Flame & Bun on the go!",
           copyright: "© 2024 Flame & Bun. All rights reserved.",
+          homePage: "Home Page",
           menu: "Menu",
           reservation: "Reservation",
           comments: "Comments",
@@ -39,7 +40,7 @@ i18n
           tableReservation: "Table Reservation",
           tableReserved: "Table reserved!",
           welcome: "Welcome to",
-          viewBotton: " View botton"
+          viewBotton: " View menu"
         },
       },
       uk: {
@@ -53,6 +54,7 @@ i18n
           pickupIntro: "У спішці та не хочете стояти в черзі? Замовте вашу їжу онлайн та заберіть її в ресторані. Просто виберіть ваші улюблені страви з нашого меню, оберіть найближчу локацію Flame & Bun, і ваша їжа буде готова, коли ви приїдете. Використовуйте наш веб-сайт або додаток Flame & Bun, щоб переглянути наш широкий вибір бургерів, гарнірів, освіжаючих напоїв та смачних десертів. Це найшвидший та найзручніший спосіб насолодитися Flame & Bun на ходу!",
           copyright: "© 2024 Flame & Bun. Усі права захищено.",
           menu: "Меню",
+          homePage: "Головна Сторінка",
           reservation: "Резервування", 
           comments: "Коментарі",
           close: "Закрити", 

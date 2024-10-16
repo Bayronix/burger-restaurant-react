@@ -12,10 +12,11 @@ import Footer from "./Footer/Footer";
 import BurgerSkills from "./BurgerSkills/BurgerSkills";
 import Description from "./Description/Description";
 import styles from "./App.module.css";
+import NotFound from "../pages/NotFoundePage/NotFound";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [setSelectedDish] = useState(null);
+  const [selectedDish, setSelectedDish] = useState(null);
 
   const openModal = (dish) => {
     setSelectedDish(dish);
@@ -28,33 +29,62 @@ function App() {
   };
 
   return (
-    <div className={styles.backgroundApp}>
-      <Header modalIsOpen={modalIsOpen} />
-      <Hero />
-      <BurgerSkills />
+    <div>
+   
       <Routes>
-        <Route path="/OurMenu" element={<Menu />} />
-        ;
+        <Route
+          path="*"
+          element={<NotFound />} 
+        />
+        <Route
+          path="/"
+          element={
+            <>
+             <div className={styles.backgroundApp}>
+              
+              <Header modalIsOpen={modalIsOpen} />
+              <Hero />
+              </div>
+              <BurgerSkills />
+              <Description />
+              <AboutUs />
+              <OurHistory />
+            
+              <Footer />
+              <Comment />
+            </>
+          }
+        />
+        
+        <Route
+          path="/OurMenu"
+          element={
+            <>
+              <Header modalIsOpen={modalIsOpen} />
+              <Menu />
+            </>
+          }
+        />
+        
         <Route
           path="/Reservation"
           element={
-            <TableReservation
-              modalIsOpen={modalIsOpen}
-              openModal={openModal}
-              closeModal={closeModal}
-            />
+            <>
+              <Header modalIsOpen={modalIsOpen} />
+              <TableReservation
+                modalIsOpen={modalIsOpen}
+                openModal={openModal}
+                closeModal={closeModal}
+              />
+            </>
           }
         />
-        {/* <Route path="/OurHistory" element={<OurHistory />} />  */}
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
-      <AboutUs />
-      <OurHistory />
-      <Description />
-      <Footer />
-      <Comment />
     </div>
   );
 }
 
 export default App;
+
+
+

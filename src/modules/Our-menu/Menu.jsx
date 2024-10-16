@@ -20,8 +20,11 @@ const Menu = () => {
   };
   return (
     <div>
+      {/* тут шось */}
       <h3 id="OurMenu" className={styles.ourMenu}>
-        Our Menu
+      </h3>
+      <h3 id="OurMenu" className={styles.ourMenu}>
+        Menu
       </h3>
       <BurgersMenu
         openModal={openModal}

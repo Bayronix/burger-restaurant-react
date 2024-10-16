@@ -15,6 +15,7 @@
   font-weight: 500;
   color: #ffffff;
   margin: 0;
+  z-index: 1;
 }
 .b {
   text-shadow: 2px 2px 4px #ff8c00;
@@ -29,6 +30,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
+  z-index: 1;
 }
 
 .viewClass {
