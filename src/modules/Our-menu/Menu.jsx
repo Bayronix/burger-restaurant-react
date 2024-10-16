@@ -1,4 +1,3 @@
-import { Routes, Route } from "react-router-dom";
 
 import BurgersMenu from "./Burgers/BurgersMenu";
 import DrinksItemMenu from "./Drinks/DrinksMenu";
