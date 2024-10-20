@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { PiHamburgerFill } from "react-icons/pi";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import Auth from "../../auth/auth";
+import Auth from "../../auth/authNav";
 import { NavLink } from "react-router-dom";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from 'react-i18next';
@@ -80,7 +80,7 @@ const Header = ({ modalIsOpen }) => {
                 <ul>
                 <li>
                     <NavLink
-                      to="/HomePage"
+                      to="/"
                       className={styles.navLink}
                       onClick={closeBurgerMenu}
                     >

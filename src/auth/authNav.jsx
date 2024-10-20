@@ -10,7 +10,6 @@ const Auth = () => {
         <li className={styles.navItem}>
           <NavLink className={styles.liAuth} to="/Register">Register</NavLink>
         </li>
-        
       </ul>
     </div>
   );

@@ -14,6 +14,10 @@ import Description from "./Description/Description";
 import styles from "./App.module.css";
 import NotFound from "../pages/NotFoundePage/NotFound";
 
+// Renamed components to follow React convention
+import AuthLogin from "../auth/authComponentLogin/authLogin";
+import AuthRegister from "../auth/authComponentRegister/authRegister";
+
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedDish, setSelectedDish] = useState(null);
@@ -30,32 +34,26 @@ function App() {
 
   return (
     <div>
-   
       <Routes>
-        <Route
-          path="*"
-          element={<NotFound />} 
-        />
+        <Route path="*" element={<NotFound />} />
         <Route
           path="/"
           element={
             <>
-             <div className={styles.backgroundApp}>
-              
-              <Header modalIsOpen={modalIsOpen} />
-              <Hero />
+              <div className={styles.backgroundApp}>
+                <Header modalIsOpen={modalIsOpen} />
+                <Hero />
               </div>
               <BurgerSkills />
-              <Description />
               <AboutUs />
               <OurHistory />
-            
+              <Description />
               <Footer />
               <Comment />
+              
             </>
           }
         />
-        
         <Route
           path="/OurMenu"
           element={
@@ -65,7 +63,6 @@ function App() {
             </>
           }
         />
-        
         <Route
           path="/Reservation"
           element={
@@ -79,6 +76,9 @@ function App() {
             </>
           }
         />
+  
+        <Route path="/Login" element={<AuthLogin />} />
+        <Route path="/Register" element={<AuthRegister />} />
       </Routes>
     </div>
   );
