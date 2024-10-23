@@ -1,0 +1,106 @@
+.showMenuContainer {
+    display: flex;
+    margin: 40px 0;
+    background-image: url('../../../public/images/openart-a-rustic-rectangular-wooden-board-with-a-natural-grain-texture-the-surface\ (3)\ (1).jpg');
+    background-size: cover;
+    max-height: 1500px;
+    padding: 20px;
+    overflow-x: hidden; /* Prevents elements from overflowing */
+}
+
+.showMenuList {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Prevents overflow on large screens */
+}
+
+.showMenuElement {
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    width: 295px;
+}
+
+.showMenuElement:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.showMenuElement p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+}
+
+.showMenuElement img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .showMenuList {
+        gap: 20px;
+
+        flex-wrap: wrap; 
+    }
+
+    .showMenuElement {
+        width: 200px;
+    }
+
+    .showMenuElement img {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .showMenuContainer {
+        padding: 15px; 
+    }
+
+    .showMenuList {
+        gap: 20px; 
+    }
+
+    .showMenuElement {
+        width: 232px; 
+    }
+
+    .showMenuElement img {
+        width: 280px; 
+        height: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .showMenuContainer {
+        overflow-x: auto; 
+        padding-bottom: 10px;
+    }
+
+    .showMenuList {
+        display: flex;
+        flex-wrap: nowrap; 
+        gap: 20px;
+    }
+
+    .showMenuElement {
+        min-width: 220px;
+    }
+
+    .showMenuElement img {
+        width: 250px;
+        height: 160px;
+    }
+}

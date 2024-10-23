@@ -53,7 +53,7 @@ i18n
           tableReservation: "Table Reservation",
           tableReserved: "Table reserved!",
           welcome: "Welcome to",
-          viewBotton: " View menu"
+          viewLink: " View menu"
         },
       },
       uk: {
@@ -103,7 +103,7 @@ i18n
           tableReservation: "Резервування столика",
           tableReserved: "Столик заброньовано!",
           welcome: "Ласкаво просимо до",
-          viewBotton: " Переглянути меню"
+          viewLink: " Переглянути меню"
         },
       },
     },

@@ -13,6 +13,7 @@ import BurgerSkills from "./BurgerSkills/BurgerSkills";
 import Description from "./Description/Description";
 import styles from "./App.module.css";
 import NotFound from "../pages/NotFoundePage/NotFound";
+import ShowMenu from "./ShowMenu/ShowMenu";
 
 
 
@@ -43,6 +44,7 @@ function App() {
                 <Hero />
               </div>
               <BurgerSkills />
+              <ShowMenu/>
               <AboutUs />
               <OurHistory />
               <Description />

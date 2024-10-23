@@ -9,7 +9,7 @@ Modal.setAppElement("#root");
 
 const BurgersMenu = ({ openModal, closeModal, modalIsOpen, selectedDish }) => {
   return (
-    <section className={styles.ourDishesSection}>
+    <section id="burgers" className={styles.ourDishesSection}>
       <div className={styles.divOurDishesSection}>
         <h3 className={styles.ourMenu}>Burgers</h3>
         <ul className={styles.dishesList}>

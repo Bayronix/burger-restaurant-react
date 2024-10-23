@@ -9,7 +9,7 @@
     font-size: 1rem;
 }
 
-/* Стиль модального оверлею */
+
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -23,21 +23,23 @@
     z-index: 1000;
 }
 
-/* Контейнер для модального вікна */
 .modalContent {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
-    width: 100%;
+    max-width: 90%;
+    width: 25%;
     text-align: center;
+    max-height: 80%;
+    overflow-y: auto;
 }
 
-/* Кнопка для закриття модалки */
+
 .closeButton {
     position: absolute;
     top: 10px;
+    color: #ff7300;
     right: 10px;
     background: none;
     border: none;
@@ -72,4 +74,46 @@
 
 .flag {
     margin-right: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .modalContent {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .closeButton {
+        font-size: 1.2rem;
+    }
+
+    .modalToggleButton {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .switcherButton {
+        min-width: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalContent {
+        padding: 10px;
+    }
+
+    .closeButton {
+        font-size: 1rem;
+    }
+
+    .modalToggleButton {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .switcherButton {
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
 }

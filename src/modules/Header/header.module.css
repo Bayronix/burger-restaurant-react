@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -37,7 +36,7 @@ ul {
 }
 
 .headerLogo {
-  display: none;
+  display: none; /* Modify to show on larger screens */
 }
 
 .burgerIcon {
@@ -48,7 +47,6 @@ ul {
 .headerNav {
   flex-grow: 1;
 }
-
 
 .navList {
   display: flex;
@@ -75,13 +73,12 @@ ul {
 
 .navAncor:hover {
   color: #ffdd57;
-  transform: scale(1.1);
+  transform: scale(1.05); /* Subtle hover effect */
 }
 
 .phoneNumber {
   display: none;
 }
-
 
 @media (min-width: 768px) {
   .headerFirstDiv {
@@ -115,14 +112,19 @@ ul {
   }
 
   .headerLogo {
-    display: block;
+    display: none;
     font-size: 50px;
     color: #ff7300;
   }
 }
 
-
 @media (min-width: 1024px) {
+  .headerLogo {
+    display: block;
+    font-size: 50px;
+    color: #ff7300;
+  }
+  
   .headerFirstDiv {
     max-height: 100px;
   }
@@ -152,7 +154,6 @@ ul {
     font-size: 60px;
   }
 }
-
 
 .burgerMenu {
   position: fixed;
@@ -190,7 +191,6 @@ ul {
 .burgerNav {
   text-align: center;
 }
-
 
 @media screen and (max-width: 768px) {
   .headerNav {

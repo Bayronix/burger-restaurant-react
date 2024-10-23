@@ -14,7 +14,7 @@ const DrinksItemMenu = ({
   selectedDish,
 }) => {
   return (
-    <section className={styles.ourDishesSection}>
+    <section id="drinks" className={styles.ourDishesSection}>
       <div className={styles.divOurDishesSection}>
         <h3 className={styles.ourMenu}>Drinks</h3>
         <ul className={styles.dishesList}>

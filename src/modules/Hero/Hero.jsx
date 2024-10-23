@@ -1,17 +1,18 @@
-
 import styles from "./Hero.module.css";
 import { MdFoodBank } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+
 const handleViewMenuClick = () => {
   const menuSection = document.getElementById("Menu");
   if (menuSection) {
     menuSection.scrollIntoView({ behavior: "smooth" });
   }
 };
-//  ???????
 
 const Hero = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
+
   return (
     <div className={styles.divViewHeader}>
       <h1 className={styles.viewHeaderText}>
@@ -21,13 +22,10 @@ const Hero = () => {
         </b>
         <MdFoodBank className={styles.viewClass} />
       </h1>
-      <button
-        type="button"
-        className={styles.viewMenuButton}
-        onClick={handleViewMenuClick}
-      >
-        {t("viewBotton")}
-      </button>
+      <NavLink className={styles.viewMenuButton} to="./OurMenu">
+        {t("viewLink")}
+        {/* виправити */}
+      </NavLink>
     </div>
   );
 };
