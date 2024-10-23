@@ -14,9 +14,7 @@ import Description from "./Description/Description";
 import styles from "./App.module.css";
 import NotFound from "../pages/NotFoundePage/NotFound";
 
-// Renamed components to follow React convention
-import AuthLogin from "../auth/authComponentLogin/authLogin";
-import AuthRegister from "../auth/authComponentRegister/authRegister";
+
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -77,8 +75,6 @@ function App() {
           }
         />
   
-        <Route path="/Login" element={<AuthLogin />} />
-        <Route path="/Register" element={<AuthRegister />} />
       </Routes>
     </div>
   );

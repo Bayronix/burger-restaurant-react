@@ -1,6 +1,8 @@
+
 html {
   scroll-behavior: smooth;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -15,6 +17,7 @@ ul {
   background-position: center;
   z-index: 12;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
 }
 
 .headerNoBackground {
@@ -30,10 +33,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px;
+  padding: 15px 20px;
 }
 
-.headerLogo,
+.headerLogo {
+  display: none;
+}
+
 .burgerIcon {
   font-size: 40px;
   cursor: pointer;
@@ -43,49 +49,39 @@ ul {
   flex-grow: 1;
 }
 
-.divViewHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  min-height: 200px;
-  padding: 150px 22px;
-}
-
-.viewHeaderText {
-  font-weight: 500;
-  font-size: 40px;
-  color: #f87001;
-  margin: 0;
-}
-
-.viewMenuButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ff7300d4;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.viewMenuButton:hover,
-.viewMenuButton:focus {
-  background: #de6705c7;
-}
 
 .navList {
   display: flex;
-  justify-content: baseline;
-  gap: 20px;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navItem {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center; 
+}
+
+.navAncor {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navAncor:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
 }
 
 .phoneNumber {
   display: none;
 }
+
 
 @media (min-width: 768px) {
   .headerFirstDiv {
@@ -103,64 +99,15 @@ ul {
   .navList {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-grow: 1;
-  }
-
-  .navItem {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .navAncor {
-    text-decoration: none;
-    color: white;
-  }
-
-  .navAncor:hover {
-    color: #ffdd57;
-    transform: scale(1.2);
-  }
-  .navItem:hover {
-    color: #babfc4;
   }
 
   .phoneNumber {
     display: block;
     color: white;
     text-decoration: none;
-
     font-size: 16px;
-  }
-
-  .phoneNumber:hover {
-    color: #ffdd57;
-  }
-
-  .reservationButton {
-    display: block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
-    border-radius: 4px;
-
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .reservationButton:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    color: white;
-  }
-
-  .viewMenuButton {
-    margin-top: 0;
   }
 
   .burgerIcon {
@@ -168,19 +115,16 @@ ul {
   }
 
   .headerLogo {
+    display: block;
     font-size: 50px;
+    color: #ff7300;
   }
 }
+
 
 @media (min-width: 1024px) {
   .headerFirstDiv {
     max-height: 100px;
-  }
-  .navList {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
   }
 
   .divViewHeader {
@@ -204,13 +148,11 @@ ul {
     display: none;
   }
 
-  .headerLogo,
-  .burgerIcon {
+  .headerLogo {
     font-size: 60px;
   }
 }
 
-/* -------------- Burger menu ----------- */
 
 .burgerMenu {
   position: fixed;
@@ -219,18 +161,17 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: #efeae6d4;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: none;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 15;
 }
+
+.burgerMenu.hidden {
+  transform: translateY(-100%);
+}
+
 .close {
   position: absolute;
   top: 25px;
@@ -245,22 +186,22 @@ ul {
   color: #ff7300;
   font-size: 24px;
 }
-.hidden {
-  transform: translateY(-100%);
-}
 
 .burgerNav {
   text-align: center;
 }
 
+
 @media screen and (max-width: 768px) {
   .headerNav {
     display: none;
   }
+
   .burgerIcon {
     display: flex;
     font-size: 50px;
   }
+
   .phoneNumber {
     display: none;
   }

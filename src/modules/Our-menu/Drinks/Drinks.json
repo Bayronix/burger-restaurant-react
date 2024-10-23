@@ -5,23 +5,18 @@
     "image": "../../../../public/images/drinks/cocaCola.jpg"
   },
   {
-    "name": "Coca Cola",
+    "name": "Pepsi",
     "price": 5,
-    "image": "../../../../public/images/drinks/cocaCola.jpg"
+    "image": "../../../../public/images/drinks/pepsi.jpg"
   },
   {
-    "name": "Coca Cola",
+    "name": "Fanta",
     "price": 4,
-    "image": "../../../../public/images/drinks/cocaCola.jpg"
+    "image": "../../../../public/images/drinks/fanta.jpg"
   },
   {
-    "name": "Coca Cola",
+    "name": "Sprite",
     "price": 7,
-    "image": "../../../../public/images/drinks/cocaCola.jpg"
-  },
-  {
-    "name": "Coca Cola",
-    "price": 9,
-    "image": "../../../../public/images/drinks/cocaCola.jpg"
+    "image": "../../../../public/images/drinks/sprite.jpg"
   }
 ]
