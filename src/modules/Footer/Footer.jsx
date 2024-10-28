@@ -22,12 +22,12 @@ const Footer = () => {
         <nav>
           <ul className={styles.AiOut}>
             <li>
-              <a href="">
+              <a href=" https://www.facebook.com/profile.php?id=61552529534144">
                 <FaFacebook className={styles.svgNav} />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/halytskyi_vladyslav/profilecard/?igsh=MXdlOXY1ZmRqOWJvdg==">
                 <AiOutlineInstagram className={styles.svgNav} />
               </a>
             </li>
