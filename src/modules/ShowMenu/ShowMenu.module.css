@@ -1,11 +1,42 @@
+.showMenuSection{
+    padding-top: 20px;
+}
+
+.menuBorder {
+    font-size: 3rem;
+    color: #ffffff; 
+    background-color: #e76800;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 
+      0 0 5px #cdd2cc, 
+      0 0 10px #f1f1f1;
+     
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 
+        0 0 10px #ffffff, 
+     
+    }
+    to {
+      text-shadow: 
+        0 0 20px #ffffff, 
+       
+    }
+  }
+  
+
 .showMenuContainer {
     display: flex;
-    margin: 40px 0;
+    padding: 20px;
+    box-sizing: border-box; 
     background-image: url('../../../public/images/openart-a-rustic-rectangular-wooden-board-with-a-natural-grain-texture-the-surface\ (3)\ (1).jpg');
     background-size: cover;
     max-height: 1500px;
-    padding: 20px;
-    overflow-x: hidden; /* Prevents elements from overflowing */
+    overflow-x: hidden; 
 }
 
 .showMenuList {

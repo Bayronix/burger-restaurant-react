@@ -1,23 +1,31 @@
 .techSkills {
   width: 100%;
+  overflow: hidden;
 }
 
 .ribbonContainer {
   overflow: hidden;
+  padding-top: 20px;
   font-size: 20px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  position: relative;
 }
 
 .ribbon {
   background: #d67e34;
+  padding: 10px 0;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 
 .transparent {
-  color: var(--green-text-color);
-  background: var(--gray-color-bg);
   transform: rotate(2deg);
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .skills {
@@ -31,30 +39,61 @@
   gap: 20px;
   flex-shrink: 0;
   margin: 0;
-  padding: 32px 0px;
+  padding: 32px 0;
   white-space: nowrap;
 }
 
 .skillItem {
   display: flex;
   align-items: center;
+  font-size: 1em;
 }
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(-25%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 }
 
 @media screen and (min-width: 768px) {
   .ribbon,
   .transparent {
-    font-size: 32px;
+    font-size: 25px;
+    padding: 15px 0;
+  }
+
+  .skillItem {
+    font-size: 1.2em;
+  }
+
+  .skills {
+    animation: marqueeLine 15s linear infinite;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .ribbonContainer {
+    padding-top: 30px;
+  }
+
+  .ribbon,
+  .transparent {
+    font-size: 25px;
+  }
+
+  .skills {
+    animation: marqueeLine 20s linear infinite;
+  }
+
+  .skillList {
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .skillItem {
+    font-size: 1.4em;
+  }
 }
