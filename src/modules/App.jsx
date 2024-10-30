@@ -44,7 +44,6 @@ function App() {
                 <Hero />
               </div>
               <BurgerSkills />
-              <ShowMenu/>
               <AboutUs />
               <OurHistory />
               <Description />
@@ -59,6 +58,7 @@ function App() {
           element={
             <>
               <Header modalIsOpen={modalIsOpen} />
+              <ShowMenu/>
               <Menu />
             </>
           }

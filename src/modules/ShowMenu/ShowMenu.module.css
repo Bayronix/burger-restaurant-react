@@ -33,8 +33,7 @@
     display: flex;
     padding: 20px;
     box-sizing: border-box; 
-    background-image: url('../../../public/images/openart-a-rustic-rectangular-wooden-board-with-a-natural-grain-texture-the-surface\ (3)\ (1).jpg');
-    background-size: cover;
+   
     max-height: 1500px;
     overflow-x: hidden; 
 }

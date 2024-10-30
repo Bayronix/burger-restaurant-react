@@ -1,7 +1,6 @@
-/* src/components/Description/Description.module.css */
 
 .descriptionContainer {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     margin: 20px;
@@ -47,3 +46,10 @@
     }
   }
   
+  @media (min-width: 1024px) {
+    .descriptionContainer {
+      display: grid;
+      
+    }
+   
+  }

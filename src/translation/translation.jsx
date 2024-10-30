@@ -85,10 +85,10 @@ i18n
           close: "Закрити", 
           aboutUs: {
             exquisiteCuisine: "Вишукана кухня",
-            bestQualityFood: "Найкраща якість їжі",
+            bestQualityFood: "Якісна їжа",
             affordableFood: "Доступна їжа",
             exquisiteCuisineDescription: "Відчуйте кулінарну подорож з нашими майстерно приготованими стравами з найкращих інгредієнтів.",
-            bestQualityFoodDescription: "Якість нашої їжі відмінна! Ми отримуємо наші інгредієнти від найбільш авторитетних постачальників.",
+            bestQualityFoodDescription: "У нас якісна їжа Ми беремо інгредієнти тільки у перевірених постачальників",
             affordableFoodDescription: "Вартість нашої їжі залежить лише від її кількості. Якість завжди на висоті!"
           },
           ourHistoryTitle: "Наша Історія",
