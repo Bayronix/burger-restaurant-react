@@ -19,7 +19,7 @@ const ShowMenu = () => {
         </li>
         <li className={style.showMenuElement}>
           <NavLink to="/OurMenu">
-            <img src="#" alt="Sides:" />
+            <img src="../../../public/images/sides/sides.jpg" alt="Sides:" />
             <p>Sides:</p>
           </NavLink>
         </li>
