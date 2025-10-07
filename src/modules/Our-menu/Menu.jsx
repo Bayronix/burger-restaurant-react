@@ -1,14 +1,13 @@
-
+import { useState } from "react";
 import BurgersMenu from "./Burgers/BurgersMenu";
 import DrinksItemMenu from "./Drinks/DrinksMenu";
-import { useEffect, useState } from "react";
-import styles from "./Menu.module.css";
 import { useLocation } from "react-router-dom";
+import Order from "../Order/Order"; 
 
 const Menu = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedDish, setSelectedDish] = useState(null);
-
+  const [orderItems, setOrderItems] = useState([]); 
   const openModal = (dish) => {
     setSelectedDish(dish);
     setModalIsOpen(true);
@@ -17,19 +16,10 @@ const Menu = () => {
   const closeModal = () => {
     setModalIsOpen(false);
     setSelectedDish(null);
+    setOrderItems((prevOrderItems) => [...prevOrderItems, selectedDish]);
   };
 
   const { hash } = useLocation();
-
-  useEffect(() => {
-    if (hash) {
-      const element = document.getElementById(hash.replace("#", ""));
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [hash]);
-  
 
   return (
     <div>
@@ -45,6 +35,7 @@ const Menu = () => {
         modalIsOpen={modalIsOpen}
         selectedDish={selectedDish}
       />
+      <Order orderItems={orderItems} /> 
     </div>
   );
 };

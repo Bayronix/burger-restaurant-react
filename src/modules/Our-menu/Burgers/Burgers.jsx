@@ -1,7 +1,11 @@
+
 import styles from "./BurgersMenu.module.css";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const BurgerItem = ({ dish, openModal }) => {
+
+
   return (
     <li className={styles.dishItem}>
       <img src={dish.image} alt={dish.name} className={styles.dishItemImage} />

@@ -1,0 +1,46 @@
+.orderContainer{ 
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    z-index: 5;
+    background-color: rgba(255, 115, 0, 0.83);
+}
+.orderButton {
+    width: 100px;
+    height: 50px;
+}
+
+
+.orderList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.orderItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.orderImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dishName {
+    flex: 1;
+}
+
+.dishPrice {
+    font-weight: bold;
+}
+
+.orderButton {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}

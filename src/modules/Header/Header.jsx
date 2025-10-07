@@ -53,11 +53,7 @@ const Header = ({ modalIsOpen }) => {
                   {t('menu')}
                 </NavLink>
               </li>
-              <li className={styles.navItem}>
-                <NavLink to="/Reservation" className={styles.navAncor}>
-                  {t('reservation')} 
-                </NavLink>
-              </li>
+             
             
             </ul>
           </nav>
@@ -95,15 +91,7 @@ const Header = ({ modalIsOpen }) => {
                       {t('menu')} 
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink
-                      to="/Reservation"
-                      className={styles.navLink}
-                      onClick={closeBurgerMenu}
-                    >
-                      {t('reservation')} 
-                    </NavLink>
-                  </li>
+                 
                  <li>
              
                  </li>

@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import AboutUs from "./About-us/About-us";
 import OurHistory from "./Our-history/Our-history";
-import TableReservation from "./TableReservation/TableReservation";
+
 import Menu from "./Our-menu/Menu";
 import Comment from "./Comment/Comment";
 import Footer from "./Footer/Footer";
@@ -68,11 +68,7 @@ function App() {
           element={
             <>
               <Header modalIsOpen={modalIsOpen} />
-              <TableReservation
-                modalIsOpen={modalIsOpen}
-                openModal={openModal}
-                closeModal={closeModal}
-              />
+
             </>
           }
         />
